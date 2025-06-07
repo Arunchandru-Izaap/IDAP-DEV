@@ -1,0 +1,1369 @@
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /usr/lib/php/20180731/php_pdo_mysql.dll (/usr/lib/php/20180731/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20180731/php_pdo_mysql.dll.so (/usr/lib/php/20180731/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /usr/lib/php/20180731/php_pdo_mysql.dll (/usr/lib/php/20180731/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20180731/php_pdo_mysql.dll.so (/usr/lib/php/20180731/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /usr/lib/php/20180731/php_pdo_mysql.dll (/usr/lib/php/20180731/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20180731/php_pdo_mysql.dll.so (/usr/lib/php/20180731/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /usr/lib/php/20180731/php_pdo_mysql.dll (/usr/lib/php/20180731/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20180731/php_pdo_mysql.dll.so (/usr/lib/php/20180731/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /usr/lib/php/20180731/php_pdo_mysql.dll (/usr/lib/php/20180731/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20180731/php_pdo_mysql.dll.so (/usr/lib/php/20180731/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /usr/lib/php/20180731/php_pdo_mysql.dll (/usr/lib/php/20180731/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20180731/php_pdo_mysql.dll.so (/usr/lib/php/20180731/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /usr/lib/php/20180731/php_pdo_mysql.dll (/usr/lib/php/20180731/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20180731/php_pdo_mysql.dll.so (/usr/lib/php/20180731/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_pdo_mysql.dll' (tried: /usr/lib/php/20180731/php_pdo_mysql.dll (/usr/lib/php/20180731/php_pdo_mysql.dll: cannot open shared object file: No such file or directory), /usr/lib/php/20180731/php_pdo_mysql.dll.so (/usr/lib/php/20180731/php_pdo_mysql.dll.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-04-28 07:54:47][1] Processing: App\Jobs\CreateVq
+[2022-04-28 07:54:47][1] Processed:  App\Jobs\CreateVq
+[2022-04-28 08:02:59][2] Processing: App\Jobs\CreateVq
+[2022-04-28 08:03:00][2] Processed:  App\Jobs\CreateVq
+[2022-04-29 04:07:00][3] Processing: App\Jobs\CreateVq
+[2022-04-29 04:07:00][4] Processing: App\Jobs\CreateVq
+[2022-04-29 04:07:01][5] Processing: App\Jobs\CreateVq
+[2022-04-29 04:07:01][5] Failed:     App\Jobs\CreateVq
+[2022-04-29 11:55:33][6] Processing: App\Jobs\CreateVq
+[2022-04-29 11:55:33][7] Processing: App\Jobs\CreateVq
+[2022-04-29 11:55:33][8] Processing: App\Jobs\CreateVq
+[2022-04-29 11:55:33][8] Failed:     App\Jobs\CreateVq
+[2022-04-29 12:10:39][9] Processing: App\Jobs\CreateVq
+[2022-04-29 12:10:39][10] Processing: App\Jobs\CreateVq
+[2022-04-29 12:10:39][11] Processing: App\Jobs\CreateVq
+[2022-04-29 12:10:39][11] Failed:     App\Jobs\CreateVq
+[2022-04-29 13:46:40][12] Processing: App\Jobs\CreateVq
+[2022-04-29 13:46:40][13] Processing: App\Jobs\CreateVq
+[2022-04-29 13:46:40][14] Processing: App\Jobs\CreateVq
+[2022-04-29 13:46:40][14] Failed:     App\Jobs\CreateVq
+[2022-04-29 13:46:42][15] Processing: App\Jobs\CreateVq
+[2022-04-29 13:46:42][16] Processing: App\Jobs\CreateVq
+[2022-04-29 13:46:42][17] Processing: App\Jobs\CreateVq
+[2022-04-29 13:46:42][17] Failed:     App\Jobs\CreateVq
+[2022-05-02 04:50:59][18] Processing: App\Jobs\CreateVq
+[2022-05-02 04:50:59][19] Processing: App\Jobs\CreateVq
+[2022-05-02 04:50:59][20] Processing: App\Jobs\CreateVq
+[2022-05-02 04:50:59][20] Failed:     App\Jobs\CreateVq
+[2022-05-02 05:05:09][21] Processing: App\Jobs\CreateVq
+[2022-05-02 05:05:09][22] Processing: App\Jobs\CreateVq
+[2022-05-02 05:05:10][23] Processing: App\Jobs\CreateVq
+[2022-05-02 05:05:10][23] Failed:     App\Jobs\CreateVq
+[2022-05-02 05:28:25][24] Processing: App\Jobs\CreateVq
+[2022-05-02 05:28:25][25] Processing: App\Jobs\CreateVq
+[2022-05-02 05:28:25][26] Processing: App\Jobs\CreateVq
+[2022-05-02 05:28:25][26] Failed:     App\Jobs\CreateVq
+[2022-05-02 05:31:19][27] Processing: App\Jobs\CreateVq
+[2022-05-02 05:31:19][28] Processing: App\Jobs\CreateVq
+[2022-05-02 05:31:19][29] Processing: App\Jobs\CreateVq
+[2022-05-02 05:31:19][29] Failed:     App\Jobs\CreateVq
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-02 05:34:04][30] Processing: App\Jobs\CreateVq
+[2022-05-02 05:34:04][31] Processing: App\Jobs\CreateVq
+[2022-05-02 05:34:04][32] Processing: App\Jobs\CreateVq
+[2022-05-02 05:34:04][32] Failed:     App\Jobs\CreateVq
+[2022-05-02 05:34:51][33] Processing: App\Jobs\CreateVq
+[2022-05-02 05:34:51][33] Processed:  App\Jobs\CreateVq
+[2022-05-02 05:53:42][34] Processing: App\Jobs\CreateVq
+[2022-05-02 05:53:42][34] Processed:  App\Jobs\CreateVq
+[2022-05-02 05:56:03][35] Processing: App\Jobs\CreateVq
+[2022-05-02 05:56:03][35] Processed:  App\Jobs\CreateVq
+[2022-05-02 06:08:58][36] Processing: App\Jobs\CreateVq
+[2022-05-02 06:08:58][36] Processed:  App\Jobs\CreateVq
+[2022-05-02 06:12:50][37] Processing: App\Jobs\CreateVq
+[2022-05-02 06:12:50][37] Processed:  App\Jobs\CreateVq
+[2022-05-02 06:13:10][38] Processing: App\Jobs\CreateVq
+[2022-05-02 06:13:10][38] Processed:  App\Jobs\CreateVq
+[2022-05-02 06:16:29][39] Processing: App\Jobs\CreateVq
+[2022-05-02 06:16:29][39] Processed:  App\Jobs\CreateVq
+[2022-05-02 06:17:28][40] Processing: App\Jobs\CreateVq
+[2022-05-02 06:17:28][40] Processed:  App\Jobs\CreateVq
+[2022-05-02 06:18:19][41] Processing: App\Jobs\CreateVq
+[2022-05-02 06:18:19][41] Processed:  App\Jobs\CreateVq
+[2022-05-02 06:21:13][42] Processing: App\Jobs\CreateVq
+[2022-05-02 06:21:13][42] Processed:  App\Jobs\CreateVq
+[2022-05-02 06:21:13][43] Processing: App\Jobs\CreateVq
+[2022-05-02 06:21:14][43] Processed:  App\Jobs\CreateVq
+[2022-05-02 06:21:23][44] Processing: App\Jobs\CreateVq
+[2022-05-02 06:21:23][44] Processed:  App\Jobs\CreateVq
+[2022-05-02 06:21:47][45] Processing: App\Jobs\CreateVq
+[2022-05-02 06:21:47][45] Processed:  App\Jobs\CreateVq
+[2022-05-02 06:22:47][46] Processing: App\Jobs\CreateVq
+[2022-05-02 06:22:47][46] Processed:  App\Jobs\CreateVq
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-04 06:17:03][1] Processing: App\Jobs\CreateVq
+[2022-05-04 06:17:03][2] Processing: App\Jobs\CreateVq
+[2022-05-04 06:17:03][3] Processing: App\Jobs\CreateVq
+[2022-05-04 06:17:03][3] Failed:     App\Jobs\CreateVq
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-04 06:19:01][4] Processing: App\Jobs\CreateVq
+[2022-05-04 06:19:01][5] Processing: App\Jobs\CreateVq
+[2022-05-04 06:19:01][6] Processing: App\Jobs\CreateVq
+[2022-05-04 06:19:01][6] Failed:     App\Jobs\CreateVq
+[2022-05-04 06:20:41][7] Processing: App\Jobs\CreateVq
+[2022-05-04 06:20:41][7] Processed:  App\Jobs\CreateVq
+[2022-05-04 10:25:46][8] Processing: App\Jobs\CreateVq
+[2022-05-04 10:25:47][8] Processed:  App\Jobs\CreateVq
+[2022-05-04 11:01:58][9] Processing: App\Jobs\CreateVq
+[2022-05-04 11:01:58][9] Processed:  App\Jobs\CreateVq
+[2022-05-04 11:03:47][10] Processing: App\Jobs\CreateVq
+[2022-05-04 11:03:47][10] Processed:  App\Jobs\CreateVq
+[2022-05-04 11:13:27][11] Processing: App\Jobs\CreateVq
+[2022-05-04 11:13:27][11] Processed:  App\Jobs\CreateVq
+[2022-05-04 11:18:23][12] Processing: App\Jobs\CreateVq
+[2022-05-04 11:18:23][12] Processed:  App\Jobs\CreateVq
+[2022-05-04 11:21:20][13] Processing: App\Jobs\newReinitiateVQ
+[2022-05-04 11:21:20][13] Processed:  App\Jobs\newReinitiateVQ
+[2022-05-04 11:23:24][14] Processing: App\Jobs\newReinitiateVQ
+[2022-05-04 11:23:24][14] Processed:  App\Jobs\newReinitiateVQ
+[2022-05-04 11:26:30][15] Processing: App\Jobs\newReinitiateVQ
+[2022-05-04 11:26:31][15] Processed:  App\Jobs\newReinitiateVQ
+[2022-05-05 05:26:30][16] Processing: App\Jobs\CreateVq
+[2022-05-05 05:26:31][16] Processed:  App\Jobs\CreateVq
+[2022-05-05 05:42:45][17] Processing: App\Jobs\CreateVq
+[2022-05-05 05:42:45][17] Processed:  App\Jobs\CreateVq
+[2022-05-05 07:56:23][18] Processing: App\Jobs\CreateVq
+[2022-05-05 07:56:23][18] Processed:  App\Jobs\CreateVq
+[2022-05-05 09:38:58][19] Processing: App\Jobs\CreateVq
+[2022-05-05 09:38:58][19] Processed:  App\Jobs\CreateVq
+[2022-05-05 09:54:33][20] Processing: App\Jobs\CreateVq
+[2022-05-05 09:54:34][20] Processed:  App\Jobs\CreateVq
+[2022-05-05 09:56:55][21] Processing: App\Jobs\CreateVq
+[2022-05-05 09:56:55][21] Processed:  App\Jobs\CreateVq
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_mysql.so' (tried: /usr/lib/php/20180731/pdo_mysql.so (/usr/lib/php/20180731/pdo_mysql.so: undefined symbol: mysqlnd_allocator), /usr/lib/php/20180731/pdo_mysql.so.so (/usr/lib/php/20180731/pdo_mysql.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-06 08:50:46][38] Processing: App\Jobs\CreateVq
+[2022-05-06 08:50:46][39] Processing: App\Jobs\CreateVq
+[2022-05-06 08:50:46][40] Processing: App\Jobs\CreateVq
+[2022-05-06 08:50:46][40] Failed:     App\Jobs\CreateVq
+[2022-05-06 08:51:28][41] Processing: App\Jobs\CreateVq
+[2022-05-06 08:51:28][42] Processing: App\Jobs\CreateVq
+[2022-05-06 08:51:28][43] Processing: App\Jobs\CreateVq
+[2022-05-06 08:51:28][43] Failed:     App\Jobs\CreateVq
+[2022-05-06 08:53:08][44] Processing: App\Jobs\CreateVq
+[2022-05-06 08:53:08][45] Processing: App\Jobs\CreateVq
+[2022-05-06 08:53:08][46] Processing: App\Jobs\CreateVq
+[2022-05-06 08:53:08][46] Failed:     App\Jobs\CreateVq
+[2022-05-06 08:53:50][47] Processing: App\Jobs\CreateVq
+[2022-05-06 08:53:50][48] Processing: App\Jobs\CreateVq
+[2022-05-06 08:53:50][49] Processing: App\Jobs\CreateVq
+[2022-05-06 08:53:50][49] Failed:     App\Jobs\CreateVq
+[2022-05-06 09:19:18][50] Processing: App\Jobs\CreateVq
+[2022-05-06 09:19:18][50] Processed:  App\Jobs\CreateVq
+[2022-05-06 09:20:36][51] Processing: App\Jobs\CreateVq
+[2022-05-06 09:20:36][51] Processed:  App\Jobs\CreateVq
+[2022-05-06 09:23:28][52] Processing: App\Jobs\CreateVq
+[2022-05-06 09:23:28][52] Processed:  App\Jobs\CreateVq
+[2022-05-06 09:30:16][53] Processing: App\Jobs\CreateVq
+[2022-05-06 09:30:16][53] Processed:  App\Jobs\CreateVq
+[2022-05-06 10:04:00][54] Processing: App\Jobs\CreateVq
+[2022-05-06 10:04:00][54] Processed:  App\Jobs\CreateVq
+[2022-05-09 05:31:37][55] Processing: App\Jobs\CreateVq
+[2022-05-09 05:31:37][55] Processed:  App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-17 07:26:35][1] Processing: App\Jobs\CreateVq
+[2022-05-17 07:27:28][2] Processing: App\Jobs\CreateVq
+[2022-05-17 07:28:26][3] Processing: App\Jobs\CreateVq
+[2022-05-17 07:29:09][3] Failed:     App\Jobs\CreateVq
+[2022-05-17 07:31:24][4] Processing: App\Jobs\CreateVq
+[2022-05-17 07:32:14][5] Processing: App\Jobs\CreateVq
+[2022-05-17 07:33:03][6] Processing: App\Jobs\CreateVq
+[2022-05-17 07:34:04][6] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-17 07:37:19][7] Processing: App\Jobs\CreateVq
+[2022-05-17 07:38:04][7] Processed:  App\Jobs\CreateVq
+[2022-05-17 09:38:38][8] Processing: App\Jobs\ApproveVq
+[2022-05-17 09:38:53][8] Processed:  App\Jobs\ApproveVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-18 11:41:50][9] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-18 11:43:20][9] Processing: App\Jobs\CreateVq
+[2022-05-18 11:44:20][9] Processed:  App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-19 06:17:56][13] Processing: App\Jobs\ReinitiateVQ
+[2022-05-19 06:17:56][13] Processed:  App\Jobs\ReinitiateVQ
+[2022-05-19 06:23:21][14] Processing: App\Jobs\ReinitiateVQ
+[2022-05-19 06:23:21][14] Processed:  App\Jobs\ReinitiateVQ
+[2022-05-19 06:24:45][15] Processing: App\Jobs\ReinitiateVQ
+[2022-05-19 06:24:45][15] Processed:  App\Jobs\ReinitiateVQ
+[2022-05-19 07:07:22][16] Processing: App\Jobs\ApproveVq
+[2022-05-19 07:07:33][16] Processed:  App\Jobs\ApproveVq
+[2022-05-19 07:10:36][17] Processing: App\Jobs\ApproveVq
+[2022-05-19 07:10:48][17] Processed:  App\Jobs\ApproveVq
+[2022-05-19 08:42:49][18] Processing: App\Jobs\ApproveVq
+[2022-05-19 08:42:55][18] Processed:  App\Jobs\ApproveVq
+[2022-05-19 08:48:13][19] Processing: App\Jobs\ReinitiateVQ
+[2022-05-19 08:48:13][19] Processed:  App\Jobs\ReinitiateVQ
+[2022-05-19 08:51:49][20] Processing: App\Jobs\ApproveVq
+[2022-05-19 08:51:55][20] Processed:  App\Jobs\ApproveVq
+[2022-05-19 09:01:30][21] Processing: App\Jobs\ReinitiateVQ
+[2022-05-19 09:01:30][21] Processed:  App\Jobs\ReinitiateVQ
+[2022-05-19 09:23:57][22] Processing: App\Jobs\ReinitiateVQ
+[2022-05-19 09:23:57][22] Processed:  App\Jobs\ReinitiateVQ
+[2022-05-19 09:25:34][23] Processing: App\Jobs\ApproveVq
+[2022-05-19 09:25:40][23] Processed:  App\Jobs\ApproveVq
+[2022-05-19 09:28:08][24] Processing: App\Jobs\ReinitiateVQ
+[2022-05-19 09:28:08][24] Processed:  App\Jobs\ReinitiateVQ
+[2022-05-19 09:29:22][25] Processing: App\Jobs\ApproveVq
+[2022-05-19 09:29:29][25] Processed:  App\Jobs\ApproveVq
+[2022-05-19 09:32:00][26] Processing: App\Jobs\CreateVq
+[2022-05-19 09:32:21][26] Processed:  App\Jobs\CreateVq
+[2022-05-19 09:34:45][27] Processing: App\Jobs\ReinitiateVQ
+[2022-05-19 09:34:45][27] Processed:  App\Jobs\ReinitiateVQ
+[2022-05-19 09:36:34][28] Processing: App\Jobs\ReinitiateVQ
+[2022-05-19 09:36:34][28] Processed:  App\Jobs\ReinitiateVQ
+[2022-05-19 09:38:41][29] Processing: App\Jobs\ApproveVq
+[2022-05-19 09:38:48][29] Processed:  App\Jobs\ApproveVq
+[2022-05-19 09:39:35][30] Processing: App\Jobs\ApproveVq
+[2022-05-19 09:39:43][30] Processed:  App\Jobs\ApproveVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-19 10:09:36][31] Processing: App\Jobs\ReinitiateVQ
+[2022-05-19 10:09:36][31] Processed:  App\Jobs\ReinitiateVQ
+[2022-05-19 10:12:31][32] Processing: App\Jobs\ReinitiateVQ
+[2022-05-19 10:12:31][32] Processed:  App\Jobs\ReinitiateVQ
+[2022-05-19 13:03:33][33] Processing: App\Jobs\CreateVq
+[2022-05-19 13:04:17][33] Processed:  App\Jobs\CreateVq
+[2022-05-19 13:04:20][34] Processing: App\Jobs\CreateVq
+[2022-05-19 13:04:26][34] Processed:  App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-19 19:02:30][35] Processing: App\Jobs\CreateVq
+[2022-05-19 19:02:35][35] Processed:  App\Jobs\CreateVq
+[2022-05-19 19:03:28][36] Processing: App\Jobs\CreateVq
+[2022-05-19 19:03:32][36] Processed:  App\Jobs\CreateVq
+[2022-05-19 19:13:48][37] Processing: App\Jobs\CreateVq
+[2022-05-19 19:13:52][37] Processed:  App\Jobs\CreateVq
+[2022-05-20 04:44:37][38] Processing: App\Jobs\CreateVq
+[2022-05-20 04:44:43][39] Processing: App\Jobs\CreateVq
+[2022-05-20 04:44:53][40] Processing: App\Jobs\CreateVq
+[2022-05-20 04:45:23][39] Processed:  App\Jobs\CreateVq
+[2022-05-20 04:45:28][38] Processed:  App\Jobs\CreateVq
+[2022-05-20 04:45:28][40] Processed:  App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-20 09:31:50][41] Processing: App\Jobs\CreateVq
+[2022-05-20 09:32:24][42] Processing: App\Jobs\CreateVq
+[2022-05-20 09:33:13][42] Processed:  App\Jobs\CreateVq
+[2022-05-20 09:37:28][43] Processing: App\Jobs\newReinitiateVQ
+[2022-05-20 09:37:55][44] Processing: App\Jobs\newReinitiateVQ
+[2022-05-20 09:38:09][45] Processing: App\Jobs\newReinitiateVQ
+[2022-05-20 09:38:19][45] Failed:     App\Jobs\newReinitiateVQ
+[2022-05-20 09:46:23][46] Processing: App\Jobs\newReinitiateVQ
+[2022-05-20 09:46:32][47] Processing: App\Jobs\newReinitiateVQ
+[2022-05-20 09:47:29][48] Processing: App\Jobs\newReinitiateVQ
+[2022-05-20 09:47:59][48] Failed:     App\Jobs\newReinitiateVQ
+[2022-05-20 10:10:51][49] Processing: App\Jobs\CreateVq
+[2022-05-20 10:10:57][49] Processed:  App\Jobs\CreateVq
+[2022-05-20 10:49:33][50] Processing: App\Jobs\ReinitiateVQ
+[2022-05-20 10:49:33][50] Processed:  App\Jobs\ReinitiateVQ
+[2022-05-20 10:50:14][51] Processing: App\Jobs\ReinitiateVQ
+[2022-05-20 10:50:14][52] Processing: App\Jobs\ReinitiateVQ
+[2022-05-20 10:50:14][53] Processing: App\Jobs\ReinitiateVQ
+[2022-05-20 10:50:14][53] Failed:     App\Jobs\ReinitiateVQ
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-20 10:51:54][54] Processing: App\Jobs\ReinitiateVQ
+[2022-05-20 10:51:54][54] Processed:  App\Jobs\ReinitiateVQ
+[2022-05-20 10:52:47][55] Processing: App\Jobs\ReinitiateVQ
+[2022-05-20 10:52:47][55] Processed:  App\Jobs\ReinitiateVQ
+[2022-05-20 10:54:58][56] Processing: App\Jobs\ReinitiateVQ
+[2022-05-20 10:54:58][56] Processed:  App\Jobs\ReinitiateVQ
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-20 11:30:02][57] Processing: App\Jobs\CreateVq
+[2022-05-20 11:30:09][57] Processed:  App\Jobs\CreateVq
+[2022-05-20 12:07:02][58] Processing: App\Jobs\CreateVq
+[2022-05-20 12:07:48][58] Processed:  App\Jobs\CreateVq
+[2022-05-20 13:32:13][59] Processing: App\Jobs\ReinitiateVQ
+[2022-05-20 13:32:13][59] Processed:  App\Jobs\ReinitiateVQ
+[2022-05-20 13:42:23][60] Processing: App\Jobs\ReinitiateVQ
+[2022-05-20 13:42:23][60] Processed:  App\Jobs\ReinitiateVQ
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 07:38:58][61] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 07:40:28][61] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 07:41:58][61] Processing: App\Jobs\CreateVq
+[2022-05-22 07:42:58][61] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 07:46:05][62] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 07:47:35][62] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 07:49:05][62] Processing: App\Jobs\CreateVq
+[2022-05-22 07:50:05][62] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 07:52:36][63] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 07:54:06][63] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 07:55:37][63] Processing: App\Jobs\CreateVq
+[2022-05-22 07:56:37][63] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 08:16:29][64] Processing: App\Jobs\CreateVq
+[2022-05-22 08:17:14][64] Processed:  App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 08:21:11][65] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 08:22:41][65] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 08:23:33][66] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 08:24:18][67] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 08:25:49][67] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 08:27:19][67] Processing: App\Jobs\CreateVq
+[2022-05-22 08:28:19][67] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:07:25][68] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:08:55][68] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:10:25][68] Processing: App\Jobs\CreateVq
+[2022-05-22 09:11:25][68] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:16:35][69] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:18:05][69] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:19:36][69] Processing: App\Jobs\CreateVq
+[2022-05-22 09:20:36][69] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:21:48][70] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:23:19][70] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:24:49][70] Processing: App\Jobs\CreateVq
+[2022-05-22 09:25:49][70] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:29:01][71] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:30:31][71] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:32:02][71] Processing: App\Jobs\CreateVq
+[2022-05-22 09:33:02][71] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:41:42][72] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:43:12][72] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:44:42][72] Processing: App\Jobs\CreateVq
+[2022-05-22 09:45:42][72] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:53:01][73] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 09:59:28][73] Processed:  App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 10:03:41][74] Processing: App\Jobs\CreateVq
+[2022-05-22 10:03:44][75] Processing: App\Jobs\CreateVq
+[2022-05-22 10:03:48][76] Processing: App\Jobs\CreateVq
+[2022-05-22 10:03:51][76] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 10:05:38][77] Processing: App\Jobs\CreateVq
+[2022-05-22 10:05:42][78] Processing: App\Jobs\CreateVq
+[2022-05-22 10:05:46][79] Processing: App\Jobs\CreateVq
+[2022-05-22 10:05:49][79] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 10:08:57][80] Processing: App\Jobs\CreateVq
+[2022-05-22 10:09:00][81] Processing: App\Jobs\CreateVq
+[2022-05-22 10:09:04][82] Processing: App\Jobs\CreateVq
+[2022-05-22 10:09:07][82] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 10:10:25][83] Processing: App\Jobs\CreateVq
+[2022-05-22 10:10:29][84] Processing: App\Jobs\CreateVq
+[2022-05-22 10:10:32][85] Processing: App\Jobs\CreateVq
+[2022-05-22 10:10:36][85] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 10:12:50][86] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 10:48:30][87] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 11:07:14][88] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 11:07:16][89] Processing: App\Jobs\CreateVq
+[2022-05-22 11:07:17][90] Processing: App\Jobs\CreateVq
+[2022-05-22 11:07:19][91] Processing: App\Jobs\CreateVq
+[2022-05-22 11:07:19][90] Failed:     App\Jobs\CreateVq
+[2022-05-22 11:07:22][91] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 11:09:35][92] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 11:54:07][93] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 11:54:11][94] Processing: App\Jobs\CreateVq
+[2022-05-22 11:54:14][94] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 11:55:22][95] Processing: App\Jobs\CreateVq
+[2022-05-22 11:55:26][96] Processing: App\Jobs\CreateVq
+[2022-05-22 11:55:29][97] Processing: App\Jobs\CreateVq
+[2022-05-22 11:55:32][97] Failed:     App\Jobs\CreateVq
+[2022-05-22 11:55:45][98] Processing: App\Jobs\CreateVq
+[2022-05-22 11:56:10][99] Processing: App\Jobs\CreateVq
+[2022-05-22 11:56:35][100] Processing: App\Jobs\CreateVq
+[2022-05-22 11:57:00][100] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 12:00:16][101] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 12:18:53][102] Processing: App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 12:18:58][103] Processing: App\Jobs\CreateVq
+[2022-05-22 12:19:00][103] Failed:     App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 12:19:34][104] Processing: App\Jobs\CreateVq
+[2022-05-22 12:19:37][105] Processing: App\Jobs\CreateVq
+[2022-05-22 12:19:39][106] Processing: App\Jobs\CreateVq
+[2022-05-22 12:19:44][106] Failed:     App\Jobs\CreateVq
+[2022-05-22 12:20:06][107] Processing: App\Jobs\CreateVq
+[2022-05-22 12:30:06][107] Processed:  App\Jobs\CreateVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-22 12:31:59][108] Processing: App\Jobs\CreateVq
+[2022-05-22 12:32:04][109] Processing: App\Jobs\CreateVq
+[2022-05-22 12:32:08][110] Processing: App\Jobs\CreateVq
+[2022-05-22 12:32:12][110] Failed:     App\Jobs\CreateVq
+[2022-05-22 12:33:14][111] Processing: App\Jobs\CreateVq
+[2022-05-22 16:47:24][111] Processed:  App\Jobs\CreateVq
+[2022-05-23 04:30:32][112] Processing: App\Jobs\CreateVq
+[2022-05-23 04:30:45][112] Processed:  App\Jobs\CreateVq
+[2022-05-23 04:33:20][113] Processing: App\Jobs\CreateVq
+[2022-05-23 04:33:26][113] Processed:  App\Jobs\CreateVq
+[2022-05-23 04:36:50][114] Processing: App\Jobs\CreateVq
+[2022-05-23 04:36:57][114] Processed:  App\Jobs\CreateVq
+[2022-05-23 04:37:47][115] Processing: App\Jobs\CreateVq
+[2022-05-23 04:37:54][115] Processed:  App\Jobs\CreateVq
+[2022-05-23 04:49:09][116] Processing: App\Jobs\CreateVq
+[2022-05-23 04:49:16][116] Processed:  App\Jobs\CreateVq
+[2022-05-23 07:23:34][117] Processing: App\Jobs\ApproveVq
+PHP Warning:  Module 'PDO' already loaded in Unknown on line 0
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+[2022-05-23 07:34:24][118] Processing: App\Jobs\CreateVq
+[2022-05-23 07:34:32][118] Processed:  App\Jobs\CreateVq
