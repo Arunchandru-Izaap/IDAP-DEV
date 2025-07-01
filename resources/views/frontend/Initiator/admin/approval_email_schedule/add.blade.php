@@ -84,8 +84,8 @@
                           <select name="type" id="type" class="form-control">
                               <option value="">Select</option>
                               <option value="vq">VQ</option>
-                              <option value="reinitvq_normal">Reinitation Normal Workflow</option>
-                              <option value="reinitvq_fast">Reinitation Fast Workflow</option>
+                              <!-- <option value="reinitvq_normal">Reinitation Normal Workflow</option>
+                              <option value="reinitvq_fast">Reinitation Fast Workflow</option> -->
                               
                           </select>
                       </div>
@@ -128,7 +128,7 @@
                     <button type="submit" class="btn btn-primary" id='submit-btn'>
                         Submit
                     </button>
-                    <a href="{{ route('initiator-approval-email-schedule-list') }}" class="btn btn-warning">Close</a>
+                    <a href="{{ route('initiator-approval-email-schedule-list') }}" class="btn btn-warning">Cancel</a>
                     </div>
                 </div>
             </form>
@@ -139,12 +139,46 @@
   <script type="text/javascript">
   $('.js-example-basic-multiple').select2({ width: '100%' });
 
+  // latest validation
+  $('#start_days').on('keyup', function() {
+    let stdays = parseInt($(this).val());
+    var days = parseInt($('#days').val());
+    var startdate = $('#start_date').val();
+    var enddate = $('#end_date').val();
+
+    // Define your two dates
+    let date1 = new Date(startdate);
+    let date2 = new Date(enddate);
+    // Calculate the difference in milliseconds
+    let timeDiff = date2.getTime() - date1.getTime();
+    // Convert milliseconds to days
+    let dayDiff = timeDiff / (1000 * 3600 * 24) + 1;
+
+    console.log("Difference in days:", dayDiff); // Output: 4
+
+    $('#submit-btn').prop("disabled", false);
+    if(stdays == '' || days == ''){
+      alert('Please Enter Start days');
+      $('#submit-btn').prop("disabled", true);
+    }else{
+      if (stdays === 0 || isNaN(stdays)) {
+        alert("Please enter a number greater than 0.");
+        $('#submit-btn').prop("disabled", true);
+      }else{
+        if(stdays > parseInt(dayDiff)){
+          alert('Start day should not be greater then configured Start Date and End Date');
+          $('#submit-btn').prop("disabled", true);
+        }
+      }
+    }
+  });
+  /* old validation 
   $('#start_days').on('keyup', function() {
     let stdays = parseInt($(this).val());
     var days = parseInt($('#days').val());
     $('#submit-btn').prop("disabled", false);
     if(stdays == '' || days == ''){
-      alert('Please Enter start days');
+      alert('Please Enter Start days');
       $('#submit-btn').prop("disabled", true);
     }else{
       if (stdays === 0 || isNaN(stdays)) {
@@ -158,12 +192,38 @@
       }
     }
   });
+  */
   
   $('#frequency_days').on('keyup', function() {
     let value = $(this).val();
-    if (parseInt(value) === 0 || isNaN(value)) {
-      alert("Please enter a number greater than 0.");
-      $('#submit-btn').prop("disabled", true);
+    var startdate = $('#start_date').val();
+    var enddate = $('#end_date').val();
+
+    // Define your two dates
+    let date1 = new Date(startdate);
+    let date2 = new Date(enddate);
+    // Calculate the difference in milliseconds
+    let timeDiff = date2.getTime() - date1.getTime();
+    // Convert milliseconds to days
+    let dayDiff = timeDiff / (1000 * 3600 * 24) + 1;
+
+    console.log("Difference in days:", dayDiff); // Output: 4
+    if(value != ''){
+      if (parseInt(value) === 0 || isNaN(value)) {
+        alert("Please enter a number greater than 0.");
+        $('#submit-btn').prop("disabled", true);
+      }
+      else{
+        if(parseInt(value) > parseInt(dayDiff)){
+          alert('Frequency days should not be greater then configured Start Date and End Date');
+          $('#submit-btn').prop("disabled", true);
+        }else{
+          $('#submit-btn').prop("disabled", false);
+        }
+      }
+    }else{
+      alert('Please Enter Frequency days');
+      $('#submit-btn').prop("disabled", false);
     }
   });
 
@@ -196,6 +256,9 @@
           $('#days').val(response.data[0].days);
           $('#start_date').val(changedateformat(response.data[0].start_date));
           $('#end_date').val(changedateformat(response.data[0].end_date));
+          if($('#start_days').val() != ''){
+            $('#start_days').trigger('keyup');
+          }
         }else{
           alert('Please update the duration master table based on level and type');
           $('#submit-btn').prop("disabled", true);

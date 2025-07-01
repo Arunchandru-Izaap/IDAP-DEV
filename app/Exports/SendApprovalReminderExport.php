@@ -50,8 +50,7 @@ class SendApprovalReminderExport implements FromCollection,WithHeadings,WithEven
         // added to get the year from vq controller ends
         $emp = Employee::where('emp_code', Session::get('emp_code'))->first();
 
-        
-        return VoluntaryQuotation::select(
+        $data = VoluntaryQuotation::select(
             'voluntary_quotation.institution_id',
             'voluntary_quotation.sap_code',
             'voluntary_quotation.hospital_name',
@@ -66,6 +65,13 @@ class SendApprovalReminderExport implements FromCollection,WithHeadings,WithEven
         ->where('voluntary_quotation.year', $year)
         ->whereIn('voluntary_quotation.id', $this->vqids)
         ->get();//added year condition 26042024 and added parent_vq_id = 0 condition on 08052024
+
+        $data = $data->map(function ($item) use($emp) {
+            $item->rev_no =  ($item->rev_no == 0) ? "0": $item->rev_no;
+            $itemArray = $item->toArray();
+            return $itemArray;
+        });
+        return $data;
     }
     public function headings(): array
     {
@@ -78,22 +84,21 @@ class SendApprovalReminderExport implements FromCollection,WithHeadings,WithEven
     {
         return [
             'A' =>10,
-            'B' => 40,
-            'C' => 20,
-            'D' =>40,
-            'E'=>40,
-            'F'=>40,
-            'G'=>15,
-            'H'=>15,
-            'I'=>20,
-            'J'=>15,           
+            'B' =>15,
+            'C' =>40,
+            'D' =>15,
+            'E'=>15,
+            'F'=>15,
+            'G'=>25,
+            'H'=>25,
+            'I'=>15,          
         ];
     }
     public function registerEvents(): array
     {
         return [
             AfterSheet::class    => function(AfterSheet $event) {
-                $event->sheet->getDelegate()->getStyle('A1:J1')
+                $event->sheet->getDelegate()->getStyle('A1:I1')
                         ->getFill()
                         ->setFillType(\PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID)
                         ->getStartColor()

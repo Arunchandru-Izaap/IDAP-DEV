@@ -137,6 +137,12 @@
     margin: 0;
     padding: 0;
   }
+.select2-container .select2-selection--multiple {
+    max-height: 60px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 </style>
 <!-- Page content-->
 <div class="container-fluid">
@@ -155,7 +161,7 @@
                     @endforeach
                 </select>
             </div>
-            <div class="col-md-2 mr-20">
+            <div class="col-md-3 mr-20">
                 <label>Approver Level: </label>
                 <select name="approver_level" id="approver_level" class="form-control">
                     <option value="">Select Approver Level</option>
@@ -176,14 +182,17 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-6 d-flex">
-                <div class="cancel-btn ml-auto" style="padding: 14px 97px;">
+            
+          </div>
+        <div class="row mb-2">
+            <div class="col-md-12 d-flex">
+                <div class="cancel-btn ml-auto" style="padding: 14px 97px;margin-left: -97px;">
                     <button class="btn btn-danger orange-btn action_btn mr-2" id="move_up" btn-fn="move_up" disabled>Move Up</button>
                     <button class="btn btn-danger orange-btn action_btn mr-2" id="send_back" btn-fn="send_back" disabled>Send Back</button>
                     <button class="btn btn-danger orange-btn action_btn" id="move_initiator" btn-fn="mv_initiator" disabled>Move to Initiator</button>
                 </div>
             </div>
-          </div>
+        </div>
           <div class="row">
               <div id='loader1' style='display: none;'>
                     
@@ -240,7 +249,6 @@
       <div class="modal-body text-center">
         <p>Following item(s) already in RSM Level</p>
         <div class="mb-3" id="pendingMessage"></div>
-         <a class="btn btn-warning" href="javascript:void(0)" id="untickFirstLevelButton">Untick</a>
         <a class="btn btn-warning" href="javascript:void(0)" data-bs-dismiss="modal" id="">Close</a>
       </div>
       
@@ -261,7 +269,6 @@
       <div class="modal-body text-center">
         <p>Following item(s) already in Initiator Level</p>
         <div class="mb-3" id="pendingMessage1"></div>
-         <a class="btn btn-warning" href="javascript:void(0)" id="untickLastLevelButton">Untick</a>
         <a class="btn btn-warning" href="javascript:void(0)" data-bs-dismiss="modal" id="">Close</a>
       </div>
       
@@ -301,7 +308,6 @@
       <div class="modal-body text-center">
         <p>The Following item(s) at the CEO</p>
         <div class="mb-3" id="pendingMessage2"></div>
-         <a class="btn btn-warning" href="javascript:void(0)" id="untickceoLevelButton">Untick</a>
         <a class="btn btn-warning" href="javascript:void(0)" data-bs-dismiss="modal" id="">Close</a>
       </div>
       
@@ -322,7 +328,6 @@
       <div class="modal-body text-center">
         <p>Invalid selection</p>
         <div class="mb-3" id="pendingMessage3"></div>
-         <a class="btn btn-warning" href="javascript:void(0)" id="untickinvalidButton">Untick</a>
         <a class="btn btn-warning" href="javascript:void(0)" data-bs-dismiss="modal" id="">Close</a>
       </div>
       
@@ -358,7 +363,7 @@
                     $('#zero_config_admin').DataTable().destroy();
                     $('#zero_config_admin tbody').empty();
                 }
-                if($('#institution_id').val() == '')
+                if($('#brand_name').val() == '')
                 {
                     alert('Please select any one Brand name')
                     return;
@@ -387,14 +392,15 @@
                     $('#pendingMessage1').empty();
                     $('#pendingMessage2').empty();
                     $('#pendingMessage3').empty();
-                    var rowcollection = table.$(".dt-checkboxes:checked", {"page": "all"});
-                    rowcollection.each(function(index,elem){
-                        var row = $(elem).closest("tr");
-                        var vq_id = row.find('.vq_id').text();
-                        var institution_id = row.find('.institution_id').text()
-                        var hospital_name = row.find('.hospital_name').text()
-                        var rev_no = row.find('.rev_no').text()
-                        var current_level = row.find('.current_level').text()
+                    var table = $('#zero_config_admin').DataTable();
+                    var rowcollection = table.rows({ page: 'all' }).data().toArray();
+                    rowcollection.forEach(function(row) {
+                        var vq_id = row.vq_id;
+                        var institution_id = row.institution_id;
+                        var hospital_name = row.hospital_name;
+                        var rev_no = row.rev_no;
+                        var current_level = row.current_level;
+
                         if (btn_type === 'send_back' && current_level == 1) {
                             var rsmLevelItems = hospital_name+'-'+institution_id + ' in revision no:' +rev_no + ' already at RSM Level';
                             //rsmLevel.push(rsmLevelItems);
@@ -410,7 +416,7 @@
                             //ceoLevel.push(ceoLevelItems);
                             ceoLevel.push({vq_id: vq_id, message: ceoLevelItems});
                         }
-                        if (rsmLevel.length == 0 && initatorLevel.length == 0 && ceoLevel.length == 0) {
+                        if (rsmLevel.length == 0 && initatorLevel.length == 0 && ceoLevel.length == 0) { // this is optional for selected array 
                             selected.push({
                             vq_id: vq_id,
                             rev_no: rev_no,
@@ -501,54 +507,6 @@
                 } else {
                 
                 }
-            });
-            $('#untickFirstLevelButton').click(function() {
-                rsmLevel.forEach(function(item) {
-                    // Uncheck the corresponding row in the DataTable
-                    var row = table.$('tr').filter(function() {
-                    return $(this).find('.vq_id').text() == item.vq_id;
-                    });
-                    row.find('.dt-checkboxes').prop('checked', false);
-                    table.row(row).deselect();
-                });
-                $('#firstlevelerror').modal('hide');
-                enableBtn();
-            });
-            $('#untickLastLevelButton').click(function() {
-                initatorLevel.forEach(function(item) {
-                    // Uncheck the corresponding row in the DataTable
-                    var row = table.$('tr').filter(function() {
-                    return $(this).find('.vq_id').text() == item.vq_id;
-                    });
-                    row.find('.dt-checkboxes').prop('checked', false);
-                    table.row(row).deselect();
-                });
-                $('#lastlevelerror').modal('hide');
-                enableBtn();
-            });
-            $('#untickceoLevelButton').click(function() {
-                ceoLevel.forEach(function(item) {
-                    // Uncheck the corresponding row in the DataTable
-                    var row = table.$('tr').filter(function() {
-                    return $(this).find('.vq_id').text() == item.vq_id;
-                    });
-                    row.find('.dt-checkboxes').prop('checked', false);
-                    table.row(row).deselect();
-                });
-                $('#ceolevelerror').modal('hide');
-                enableBtn();
-            });
-            $('#untickinvalidButton').click(function() {
-                invalidLevel.forEach(function(item) {
-                    // Uncheck the corresponding row in the DataTable
-                    var row = table.$('tr').filter(function() {
-                    return $(this).find('.vq_id').text() == item.vq_id;
-                    });
-                    row.find('.dt-checkboxes').prop('checked', false);
-                    table.row(row).deselect();
-                });
-                $('#invaliderror').modal('hide');
-                enableBtn();
             });
         });
         function init_table()

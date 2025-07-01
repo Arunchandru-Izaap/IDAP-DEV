@@ -129,6 +129,11 @@
       height: 150px;
       overflow: auto;
     }
+    .select2-container .select2-selection--multiple {
+        max-height: 60px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 </style>
 <div id="page-content-wrapper">
                 <!-- Top navigation-->
@@ -187,7 +192,7 @@
                           @endforeach
                         </select>
                       </div>
-                      <div class="col-md-2 mr-20">
+                      <div class="col-md-3 mr-20">
                         <label>Approver Level: </label>
                         <select name="approver_level" id="approver_level" class="form-control">
                           <option value="">Select Approver Level</option>
@@ -197,6 +202,8 @@
                           <option value="4" class="poc-hidden">SBU</option>
                           <option value="5" class="poc-hidden">Semi Cluster</option>
                           <option value="6" class="poc-hidden">Cluster</option>
+                          <option value="7" class="poc-hidden">Initiator</option>
+                          <option value="8" class="poc-hidden">CEO</option>
                         </select>
                       </div>
                       <div class="col-md-2 d-flex" style="align-items: center;margin-top: 31px;">
@@ -208,7 +215,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="col-md-6 d-flex">
+                      <div class="col-md-5 d-flex" style="margin-top: 22px;">
                         <div class="cancel-btn ml-auto">
                           <button class="orange-btn action_btn mr-2" id="move_up" btn-fn="move_up" disabled>Move Up</button>
                           <button class="orange-btn action_btn mr-2" id="send_back" btn-fn="send_back" disabled>Send Back</button>
@@ -269,7 +276,6 @@
       <div class="modal-body">
         <p>The Following item(s) are already at the RSM</p>
         <div id="pendingMessage"></div>
-         <a class="btn orange-btn" href="javascript:void(0)" id="untickFirstLevelButton">Untick</a>
         <a class="btn orange-btn" href="javascript:void(0)" data-dismiss="modal" id="">Close</a>
       </div>
       
@@ -290,7 +296,6 @@
       <div class="modal-body">
         <p>The Following item(s) are already at the Initiator</p>
         <div id="pendingMessage1"></div>
-         <a class="btn orange-btn" href="javascript:void(0)" id="untickLastLevelButton">Untick</a>
         <a class="btn orange-btn" href="javascript:void(0)" data-dismiss="modal" id="">Close</a>
       </div>
       
@@ -311,7 +316,6 @@
       <div class="modal-body">
         <p>The Following item(s) at the CEO</p>
         <div id="pendingMessage2"></div>
-         <a class="btn orange-btn" href="javascript:void(0)" id="untickceoLevelButton">Untick</a>
         <a class="btn orange-btn" href="javascript:void(0)" data-dismiss="modal" id="">Close</a>
       </div>
       
@@ -332,7 +336,6 @@
       <div class="modal-body">
         <p>Invalid selection</p>
         <div id="pendingMessage3"></div>
-         <a class="btn orange-btn" href="javascript:void(0)" id="untickinvalidButton">Untick</a>
         <a class="btn orange-btn" href="javascript:void(0)" data-dismiss="modal" id="">Close</a>
       </div>
       
@@ -371,6 +374,7 @@
   var missingPocItems = [];
   $(document).ready(function(){
     $('.js-example-basic-multiple').select2({ width: '100%' },{placeholder: 'Select Item Name'});
+    
     $('.dataTables_filter label').contents().filter((_, el) => el.nodeType === 3).remove();
     $(".dataTables_filter label input").keyup(function(){
       $(".search-ct").css("opacity", "0");
@@ -386,7 +390,7 @@
           $('#zero_config').DataTable().destroy();
           $('#zero_config tbody').empty();
       }
-      if($('#institution_id').val() == '')
+      if($('#brand_name').val() == '')
       {
         alert('Please select any one Brand name')
         return;
@@ -403,26 +407,27 @@
     $('.action_btn').click(function(e){
       var userConfirmed = confirm("Are you sure you want to "+$(this).text()+"?");
       if(userConfirmed) {
-      $('#loader1').show(); 
-      e.preventDefault()
-      selected = [];
-      initatorLevel = [];
-      rsmLevel = [];
-      ceoLevel = [];
-      invalidLevel = [];
-      var btn_type = $(this).attr('btn-fn');
-      $('#pendingMessage').empty();
-      $('#pendingMessage1').empty();
-      $('#pendingMessage2').empty();
-      $('#pendingMessage3').empty();
-      var rowcollection = table.$(".dt-checkboxes:checked", {"page": "all"});
-      rowcollection.each(function(index,elem){
-          var row = $(elem).closest("tr");
-          var vq_id = row.find('.vq_id').text();
-          var institution_id = row.find('.institution_id').text()
-          var hospital_name = row.find('.hospital_name').text()
-          var rev_no = row.find('.rev_no').text()
-          var current_level = row.find('.current_level').text()
+        $('#loader1').show(); 
+        e.preventDefault()
+        selected = [];
+        initatorLevel = [];
+        rsmLevel = [];
+        ceoLevel = [];
+        invalidLevel = [];
+        var btn_type = $(this).attr('btn-fn');
+        $('#pendingMessage').empty();
+        $('#pendingMessage1').empty();
+        $('#pendingMessage2').empty();
+        $('#pendingMessage3').empty();
+        var table = $('#zero_config').DataTable();
+        var rowcollection = table.rows({ page: 'all' }).data().toArray();
+        rowcollection.forEach(function(row) {
+          var vq_id = row.vq_id;
+          var institution_id = row.institution_id;
+          var hospital_name = row.hospital_name;
+          var rev_no = row.rev_no;
+          var current_level = row.current_level;
+
           if (btn_type === 'send_back' && current_level == 1) {
             var rsmLevelItems = hospital_name+'-'+institution_id + ' in revision no:' +rev_no + ' already at RSM Level';
             //rsmLevel.push(rsmLevelItems);
@@ -438,7 +443,7 @@
             //ceoLevel.push(ceoLevelItems);
             ceoLevel.push({vq_id: vq_id, message: ceoLevelItems});
           }
-          if (rsmLevel.length == 0 && initatorLevel.length == 0 && ceoLevel.length == 0) {
+          if (rsmLevel.length == 0 && initatorLevel.length == 0 && ceoLevel.length == 0) { // this is optional for selected array 
             selected.push({
               vq_id: vq_id,
               rev_no: rev_no,
@@ -479,8 +484,6 @@
           $('#ceolevelerror').modal('show');
         } 
         if(rsmLevel.length == 0 && initatorLevel.length == 0&& ceoLevel.length == 0) {
-        
-          //console.log('Selected items:', selected);
           var settings = {
             "url": "/initiator/workflow_adjust_forward_backward_levels",
             "method": "POST",
@@ -530,54 +533,6 @@
       
       }
     });
-    $('#untickFirstLevelButton').click(function() {
-      rsmLevel.forEach(function(item) {
-        // Uncheck the corresponding row in the DataTable
-        var row = table.$('tr').filter(function() {
-          return $(this).find('.vq_id').text() == item.vq_id;
-        });
-        row.find('.dt-checkboxes').prop('checked', false);
-        table.row(row).deselect();
-      });
-      $('#firstlevelerror').modal('hide');
-      enableBtn();
-    });
-    $('#untickLastLevelButton').click(function() {
-      initatorLevel.forEach(function(item) {
-        // Uncheck the corresponding row in the DataTable
-        var row = table.$('tr').filter(function() {
-          return $(this).find('.vq_id').text() == item.vq_id;
-        });
-        row.find('.dt-checkboxes').prop('checked', false);
-        table.row(row).deselect();
-      });
-      $('#lastlevelerror').modal('hide');
-      enableBtn();
-    });
-    $('#untickceoLevelButton').click(function() {
-      ceoLevel.forEach(function(item) {
-        // Uncheck the corresponding row in the DataTable
-        var row = table.$('tr').filter(function() {
-          return $(this).find('.vq_id').text() == item.vq_id;
-        });
-        row.find('.dt-checkboxes').prop('checked', false);
-        table.row(row).deselect();
-      });
-      $('#ceolevelerror').modal('hide');
-      enableBtn();
-    });
-    $('#untickinvalidButton').click(function() {
-      invalidLevel.forEach(function(item) {
-        // Uncheck the corresponding row in the DataTable
-        var row = table.$('tr').filter(function() {
-          return $(this).find('.vq_id').text() == item.vq_id;
-        });
-        row.find('.dt-checkboxes').prop('checked', false);
-        table.row(row).deselect();
-      });
-      $('#invaliderror').modal('hide');
-      enableBtn();
-    });
   });
   function init_table()
   {
@@ -586,7 +541,6 @@
       "pageLength": 50,
       "aaSorting": [[ 2, "asc" ]],
       responsive: true,
-      // scrollX: true,
       ajax: {
           url: '/initiator/get_pending_vq_data_workflow_product_wise',
           type: 'GET',
@@ -693,7 +647,7 @@
           className: 'd-none current_level', 
         },  
       ],
-      
+      scrollX: true,
       'language': {
         'paginate': {
           'previous': "<img src='{{ asset('admin/images/left.svg') }}' class='left-block' alt=''> <img src='{{ asset('admin/images/left1.svg') }}' class='disbpr' alt=''>",

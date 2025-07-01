@@ -57,6 +57,7 @@
                 <button type="submit" class="btn btn-primary">
                     Submit
                 </button>
+                <a href="{{ route('duration-list') }}" class="btn btn-warning">Cancel</a>
                 </div>
             </div>
             </form>

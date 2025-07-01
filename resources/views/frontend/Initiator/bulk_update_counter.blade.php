@@ -219,8 +219,9 @@
             </div>
 
             <div class="col-md-12 d-flex bulk-update-product-quotation" id="bulk-update-product-quotation">
-              <div class="col-md-6 d-flex">
-                  <div class="col-md-6 d-flex mr-20" id="bulk_update_form">
+              <div class="col-md-8 d-flex">
+                  <div class="col-md-8 d-flex mr-20" id="bulk_update_form">
+                    <label style="padding: 10px 18px;">Bulk Update : </label>
                     <ul class="rth-cal d-flex">
                       <li>
                         <div class="form-group m-2">
@@ -243,7 +244,7 @@
                     </ul>
                   </div>
               </div>
-              <div class="col-md-6 d-flex">
+              <div class="col-md-4 d-flex">
                   <div class="cancel-btn ml-auto">
                       <button class="orange-btn" id="send_quotation_btn" disabled>Send Quotation</button>
                   </div>
@@ -819,49 +820,80 @@
 
         let table = $('#zero_config').DataTable();
         let rowData = table.rows().data().toArray();
-        let rowNodes = table.rows().nodes().toArray(); 
-        // console.log(rowData);
-        let selectedModeArr = [];  
-        for (i = 0; i < rowData.length; i++) {
-          let selectedMode = $(rowNodes[i]).find("select.payment_mode option:selected").val();
-          let netDiscPercent = $(rowNodes[i]).find(".net_discount_percent").html();
-          let item_code = $(rowNodes[i]).find(".item_code").val();
-          let vqsl_sku_id = $(rowNodes[i]).find(".sku_id").val();
-          let vqsls_id = $(rowNodes[i]).find(".vqsls_id").val();
+
+        // let rowNodes = table.rows().nodes().toArray(); 
+        // // console.log(rowData);
+        // let selectedModeArr = [];  
+        // for (i = 0; i < rowData.length; i++) {
+        //   let selectedMode = $(rowNodes[i]).find("select.payment_mode option:selected").val();
+        //   let netDiscPercent = $(rowNodes[i]).find(".net_discount_percent").html();
+        //   let item_code = $(rowNodes[i]).find(".item_code").val();
+        //   let vqsl_sku_id = $(rowNodes[i]).find(".sku_id").val();
+        //   let vqsls_id = $(rowNodes[i]).find(".vqsls_id").val();
+        //   if (netDiscPercent == "" || netDiscPercent == "NaN") {
+        //       //console.log("Field does not contain a number.");
+        //       alert("The Item Code: "+item_code+" Net Discount Rate is Empty")
+        //       return;
+        //   } else {
+        //       //console.log("Field contains a number");
+        //   }
+        //   console.log(selectedMode);
+        //   for(j = 0; j < dbDataArr.length; j++){
+        //     if(Number(rowData[i]['vqsls_id']) == dbDataArr[j].vqsls_id){
+        //       if(selectedMode != dbDataArr[j].payment_mode){
+        //         // console.log('ff');
+        //         let obj = {id: dbDataArr[j].vqsls_id, sku_id: dbDataArr[j].sku_id, payMode: selectedMode, netDiscPercent: netDiscPercent};
+        //         selectedModeArr.push(obj);
+        //       }
+        //       else{
+               
+        //       }
+        //       break;
+        //     }
+        //   }      
+        // }
+       
+        let selectedModeArr = [];
+        var rowcollection = table.$(".dt-checkboxes:checked", {"page": "all"});
+        rowcollection.each(function(index,elem){
+          var row = $(elem).closest("tr");
+          let institutionName = row.find('.institution_id').text(); // adjust index based on column
+          let selectedMode = row.find("select.payment_mode option:selected").val();
+          let netDiscPercent = row.find(".net_discount_percent").text();
+          let item_code = row.find(".item-code").text();
+          let vqsl_sku_id = row.find(".sku_id").text();
+          let vqsls_id = row.find(".vqsls_id").text();
           if (netDiscPercent == "" || netDiscPercent == "NaN") {
-              //console.log("Field does not contain a number.");
-              alert("The Item Code: "+item_code+" Net Discount Rate is Empty")
-              return;
-          } else {
-              //console.log("Field contains a number");
+            alert("The Item Code: "+item_code+" Net Discount Rate is Empty")
+            return;
           }
+          // console.log("Institution:", institutionName, "Item Code:", item_code, "Paymode:", selectedMode, "SKU ID:", vqsl_sku_id, "VQSLS ID:", vqsls_id);
+
           for(j = 0; j < dbDataArr.length; j++){
-            // console.log(dbDataArr[j].vqsls_id);
-            // console.log(rowData[i]['vqsls_id']);
-            if(Number(rowData[i]['vqsls_id']) == dbDataArr[j].vqsls_id){
+            if(Number(vqsls_id) == dbDataArr[j].vqsls_id){
               if(selectedMode != dbDataArr[j].payment_mode){
-                // console.log('ff');
                 let obj = {id: dbDataArr[j].vqsls_id, sku_id: dbDataArr[j].sku_id, payMode: selectedMode, netDiscPercent: netDiscPercent};
                 selectedModeArr.push(obj);
               }
               else{
-               
+              
               }
               break;
             }
-          }      
-        }
+          }
+        });
+        // alert(selectedModeArr.length);
         if(selectedModeArr.length > 0 && rowData.length == dbDataArr.length){
-          // alert('d');
             let jsonData = JSON.stringify(selectedModeArr);
             BulkCounterSendQuotation(jsonData);
         }else{
             alert('You have not change mode of discount for any item so cannot proceed for send quotation');
         }
+        // console.log(selectedModeArr);
       }
-      
     });
     function BulkCounterSendQuotation(jsonData){
+      $('#send_quotation_btn').attr('disabled', true);
       var settings = {
         "url": "/initiator/BulkUpdateCounterSendQuotation",
         "method": "POST",

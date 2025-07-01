@@ -38,8 +38,8 @@
                       <div class="col-sm-4">
                           <select name="type" id="type" class="form-control">
                               <option value="vq" <?php if ($data['type'] == 'vq') echo ' selected="selected"'; ?>>VQ</option>
-                              <option value="reinitvq_normal" <?php if ($data['type'] == 'reinitvq_normal') echo ' selected="selected"'; ?>>Reinitation Normal Workflow</option>
-                              <option value="reinitvq_fast" <?php if ($data['type'] == 'reinitvq_fast') echo ' selected="selected"'; ?>>Reinitation Fast Workflow</option>
+                              <!-- <option value="reinitvq_normal" <?php if ($data['type'] == 'reinitvq_normal') echo ' selected="selected"'; ?>>Reinitation Normal Workflow</option>
+                              <option value="reinitvq_fast" <?php if ($data['type'] == 'reinitvq_fast') echo ' selected="selected"'; ?>>Reinitation Fast Workflow</option> -->
                               
                           </select>
                       </div>
@@ -102,6 +102,41 @@
   }else{
     $('.date_section').removeClass('d-none')
   }
+
+  // latest validation
+  $('#start_days').on('keyup', function() {
+    let stdays = parseInt($(this).val());
+    var days = parseInt($('#days').val());
+    var startdate = $('#start_date').val();
+    var enddate = $('#end_date').val();
+
+    // Define your two dates
+    let date1 = new Date(startdate);
+    let date2 = new Date(enddate);
+    // Calculate the difference in milliseconds
+    let timeDiff = date2.getTime() - date1.getTime();
+    // Convert milliseconds to days
+    let dayDiff = timeDiff / (1000 * 3600 * 24) + 1;
+
+    console.log("Difference in days:", dayDiff); // Output: 4
+
+    $('#submit-btn').prop("disabled", false);
+    if(stdays == '' || days == ''){
+      alert('Please Enter Start days');
+      $('#submit-btn').prop("disabled", true);
+    }else{
+      if (stdays === 0 || isNaN(stdays)) {
+        alert("Please enter a number greater than 0.");
+        $('#submit-btn').prop("disabled", true);
+      }else{
+        if(stdays > parseInt(dayDiff)){
+          alert('Start day should not be greater then configured Start Date and End Date');
+          $('#submit-btn').prop("disabled", true);
+        }
+      }
+    }
+  });
+  /*
   $('#start_days').on('keyup', function() {
     let stdays = parseInt($(this).val());
     var days = parseInt($('#days').val());
@@ -121,15 +156,47 @@
       }
     }
   });
+  */
   
   $('#frequency_days').on('keyup', function() {
     let value = $(this).val();
-    if (parseInt(value) === 0 || isNaN(value)) {
-      alert("Please enter a number greater than 0.");
-      $('#submit-btn').prop("disabled", true);
+    var startdate = $('#start_date').val();
+    var enddate = $('#end_date').val();
+
+    // Define your two dates
+    let date1 = new Date(startdate);
+    let date2 = new Date(enddate);
+    // Calculate the difference in milliseconds
+    let timeDiff = date2.getTime() - date1.getTime();
+    // Convert milliseconds to days
+    let dayDiff = timeDiff / (1000 * 3600 * 24) + 1;
+
+    console.log("Difference in days:", dayDiff); // Output: 4
+    if(value != ''){
+      if (parseInt(value) === 0 || isNaN(value)) {
+        alert("Please enter a number greater than 0.");
+        $('#submit-btn').prop("disabled", true);
+      }
+      else{
+        if(parseInt(value) > parseInt(dayDiff)){
+          alert('Frequency days should not be greater then configured days');
+          $('#submit-btn').prop("disabled", true);
+        }else{
+          $('#submit-btn').prop("disabled", false);
+        }
+      }
+    }else{
+      alert('Please Enter Frequency days');
+      $('#submit-btn').prop("disabled", false);
     }
   });
 
+  if($('#type').val() != 'vq'){
+    $('.date_section').addClass('d-none');
+  }else{
+    $('.date_section').removeClass('d-none');
+  }
+  
   $('#level').on('change', function() {
     let level = $('#level').val();
     let type = $('#type').val();
@@ -159,7 +226,7 @@
           $('#days').val(response.data[0].days);
           $('#start_date').val(changedateformat(response.data[0].start_date));
           $('#end_date').val(changedateformat(response.data[0].end_date));
-          if($('#days').val() != ''){
+          if($('#start_days').val() != ''){
             $('#start_days').trigger('keyup'); 
           }
         }else{

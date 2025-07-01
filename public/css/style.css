@@ -1551,7 +1551,7 @@ li#Workflow_Adjust {
   /* top: 0;*/
   margin-top: 0px;
   margin-bottom: 0px;
-  bottom: -190px;
+  bottom: -136px;
   z-index: 9999;
   margin-left: 0.5px !important;
   background: #58595b !important;
@@ -1559,9 +1559,16 @@ li#Workflow_Adjust {
   width: 8rem !important;
 }
 #adminMenu{
-  max-height: 84vh;
+  max-height: 119vh;
   /* overflow-y: auto; */
 }
+
+/* Mobile view: hide or collapse sidebar */
+/* @media (max-width: 768px) {
+  #adminMenu {
+    max-height: 0vh;
+  }
+} */
 #generateMenu
 {
   position: absolute;
@@ -1627,12 +1634,12 @@ li#Workflow_Adjust {
   /* top: 0;*/
   margin-top: 0px;
   margin-bottom: 0px;
-  bottom: -2px;
+  bottom: -5px;
   z-index: 9999;
   margin-left: 0.5px !important;
   background: #58595b !important;
   transition: /*width 0.35s*/ ease !important;
-  width: 7rem !important;
+  width: 9rem !important;
 }
 
 #Approver-Manual .Approverlink 

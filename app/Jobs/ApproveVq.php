@@ -69,19 +69,22 @@ class ApproveVq implements ShouldQueue
         $vq_listing_controller = new VqListingController;
         $vq = VoluntaryQuotation::where('id',$this->vq_id)->where('is_deleted', 0)->first();
 
+        $Stockist_master = Stockist_master::where('institution_code', $vq->institution_id)
+        ->where(function ($query) {
+            $query->whereNull('payment_mode')
+                ->orWhere('payment_mode', '');
+        })
+        ->get();
+
         //code to update paymode and net discount percent starts
         if ($this->changePayModeData != null) {
             $changePayModeData1 = $this->changePayModeData;
-
-            
             foreach($changePayModeData1 as $data){
                 $id = data_get($data, 'id');
                 $payMode = data_get($data, 'payMode');
                 $netDiscountRateToStockist = data_get($data, 'netDiscPercent');
                 VoluntaryQuotationSkuListingStockist::find($id)->update(['payment_mode' => $payMode, 'net_discount_percent' => $netDiscountRateToStockist]);
             }
-
-
         }
         
         if($this->skuIdArr == null){
@@ -89,7 +92,7 @@ class ApproveVq implements ShouldQueue
             print_r($this->modeofscreen);
             // $listing_data = VoluntaryQuotationSkuListing::where('vq_id',$this->vq_id)->where('is_deleted',0)->get();
             $listing_data = VoluntaryQuotationSkuListingStockist::join('voluntary_quotation_sku_listing', 'voluntary_quotation_sku_listing.id', '=', 'voluntary_quotation_sku_listing_stockist.sku_id')
-            ->select('voluntary_quotation_sku_listing_stockist.payment_mode', 'voluntary_quotation_sku_listing_stockist.net_discount_percent',  'voluntary_quotation_sku_listing.div_id', 'voluntary_quotation_sku_listing.item_code',  'voluntary_quotation_sku_listing.discount_percent', 'voluntary_quotation_sku_listing.discount_rate', 'voluntary_quotation_sku_listing.mrp','voluntary_quotation_sku_listing.ptr', 'stockist_master.stockist_code')
+            ->select('voluntary_quotation_sku_listing_stockist.payment_mode', 'voluntary_quotation_sku_listing_stockist.net_discount_percent',  'voluntary_quotation_sku_listing.div_id', 'voluntary_quotation_sku_listing.item_code',  'voluntary_quotation_sku_listing.discount_percent', 'voluntary_quotation_sku_listing.discount_rate', 'voluntary_quotation_sku_listing.mrp','voluntary_quotation_sku_listing.ptr', 'stockist_master.stockist_code', 'stockist_master.id as stockist_id')
             ->join('stockist_master', 'stockist_master.id', '=', 'voluntary_quotation_sku_listing_stockist.stockist_id')
             ->where('voluntary_quotation_sku_listing_stockist.vq_id', $this->vq_id)
             ->where('voluntary_quotation_sku_listing_stockist.is_deleted', 0)
@@ -125,18 +128,37 @@ class ApproveVq implements ShouldQueue
             $year = $vq_listing_controller->getFinancialYear(date('Y-m-d'),"Y");
             print_r($vq->institution_id);
             //Update last year data with current year
+            $Stockist_data = [];
             foreach($listing_data as $single_data){
                 $lastYear = LastYearPrice::updateOrCreate(['sku_id' => $single_data['item_code'],'institution_id' => $vq->institution_id ,'division_id' => $single_data['div_id'],'year' => $year], [ 'discount_percent' => $single_data['discount_percent'], 'ptr' => $single_data['ptr'], 'mrp' => $single_data['mrp'], 'updated_at' => date('Y-m-d H:i:s') ]);
                 $sku_arr['item_code'] = $single_data['item_code'];
                 $sku_arr['div_code'] = $single_data['div_id'];
                 $sku_arr['discount_percent'] = $single_data['discount_percent'];
                 $sku_arr['discount_rate'] = $single_data['discount_rate'];
+                $sku_arr['stockist_id'] = $single_data['stockist_id'];
                 $sku_arr['stockist_code'] = $single_data['stockist_code'];
                 $sku_arr['payment_mode'] = $single_data['payment_mode'];
                 $sku_arr['net_discount_percent'] = $single_data['net_discount_percent'];
 
                 $send_json['sku'][]=$sku_arr;
+                $Stockist_data[$single_data['stockist_id']][] = $single_data['payment_mode'];
             }
+            
+             if(!empty($Stockist_master->toArray()) && !empty($Stockist_data)):
+                $Stockist_null_id_array = array_column($Stockist_master->toArray(), 'id');
+                $Stockist_key_ids = array_keys($Stockist_data);
+                foreach($Stockist_key_ids as $Stockist_update_id):
+                    if(in_array($Stockist_update_id, $Stockist_null_id_array)):
+                        $counts = array_count_values($Stockist_data[$Stockist_update_id]);
+                        $mostFrequentPayMode = array_search(max($counts), $counts);
+
+                        Stockist_master::where('id', $Stockist_update_id)->update(['payment_mode'=>$mostFrequentPayMode, 'updated_at'=>date('Y-m-d H:i:s')]);
+                        
+                        echo "Most frequent payMode: " . $mostFrequentPayMode . "for this Stockist ID".$Stockist_update_id;
+                    endif;
+                endforeach;
+            endif;
+
             print_r("send json object created");
 
             $vq_listing_controller->activityTracker($vq->id,'1',json_encode($send_json), 'vq_metis_object');
@@ -227,9 +249,9 @@ class ApproveVq implements ShouldQueue
 
                     if($this->modeofscreen == 'EditPaymode'): // 0th revision not getting and update in idap trans table
                         $discountMode = $json_data['payment_mode'];
-                        print_r(" ");
-                        print_r($discountMode);
-                        print_r(" ");
+                        // print_r(" ");
+                        // print_r($discountMode);
+                        // print_r(" ");
                         $updateMode = ($discountMode === 'CN') ? ['CN', 'DM'] : ['DM', 'CN'];
                         if($discountMode == 'CN'):
                             IdapDiscTran::where('INST_ID', $send_json['institute_code'])
@@ -417,7 +439,7 @@ class ApproveVq implements ShouldQueue
             $check_quotation_success_status = true;
             foreach ($all_vq as $vq_data_final) {
                 $listing_data = VoluntaryQuotationSkuListingStockist::join('voluntary_quotation_sku_listing', 'voluntary_quotation_sku_listing.id', '=', 'voluntary_quotation_sku_listing_stockist.sku_id')
-                ->select('voluntary_quotation_sku_listing_stockist.payment_mode', 'voluntary_quotation_sku_listing_stockist.net_discount_percent',  'voluntary_quotation_sku_listing.div_id', 'voluntary_quotation_sku_listing.item_code',  'voluntary_quotation_sku_listing.discount_percent', 'voluntary_quotation_sku_listing.discount_rate', 'voluntary_quotation_sku_listing.mrp','voluntary_quotation_sku_listing.ptr', 'stockist_master.stockist_code')
+                ->select('voluntary_quotation_sku_listing_stockist.payment_mode', 'voluntary_quotation_sku_listing_stockist.net_discount_percent',  'voluntary_quotation_sku_listing.div_id', 'voluntary_quotation_sku_listing.item_code',  'voluntary_quotation_sku_listing.discount_percent', 'voluntary_quotation_sku_listing.discount_rate', 'voluntary_quotation_sku_listing.mrp','voluntary_quotation_sku_listing.ptr', 'stockist_master.stockist_code', 'stockist_master.id as stockist_id')
                 ->join('stockist_master', 'stockist_master.id', '=', 'voluntary_quotation_sku_listing_stockist.stockist_id')
                 ->where('voluntary_quotation_sku_listing_stockist.vq_id', $vq_data_final->id)
                 ->where('voluntary_quotation_sku_listing_stockist.is_deleted', 0)
@@ -449,18 +471,37 @@ class ApproveVq implements ShouldQueue
                 $send_json['quotation_end_date'] = $vq_data_final->contract_end_date;
                 $send_json['DiscountModeFlag'] = "Y";
                 print_r($vq_data_final->institution_id);
+                $Stockist_data = [];
                 foreach($listing_data as $single_data){
                     $lastYear = LastYearPrice::updateOrCreate(['sku_id' => $single_data['item_code'],'institution_id' => $vq->institution_id ,'division_id' => $single_data['div_id'],'year' => $year], [ 'discount_percent' => $single_data['discount_percent'], 'ptr' => $single_data['ptr'], 'mrp' => $single_data['mrp'], 'updated_at' => date('Y-m-d H:i:s') ]);
                     $sku_arr['item_code'] = $single_data['item_code'];
                     $sku_arr['div_code'] = $single_data['div_id'];
                     $sku_arr['discount_percent'] = $single_data['discount_percent'];
                     $sku_arr['discount_rate'] = $single_data['discount_rate'];
+                    $sku_arr['stockist_id'] = $single_data['stockist_id'];
                     $sku_arr['stockist_code'] = $single_data['stockist_code'];
                     $sku_arr['payment_mode'] = $single_data['payment_mode'];
                     $sku_arr['net_discount_percent'] = $single_data['net_discount_percent'];
 
                     $send_json['sku'][]=$sku_arr;
+
+                    $Stockist_data[$single_data['stockist_id']][] = $single_data['payment_mode'];
                 }
+
+                if(!empty($Stockist_master->toArray()) && !empty($Stockist_data)):
+                    $Stockist_null_id_array = array_column($Stockist_master->toArray(), 'id');
+                    $Stockist_key_ids = array_keys($Stockist_data);
+                    foreach($Stockist_key_ids as $Stockist_update_id):
+                        if(in_array($Stockist_update_id, $Stockist_null_id_array)):
+                            $counts = array_count_values($Stockist_data[$Stockist_update_id]);
+                            $mostFrequentPayMode = array_search(max($counts), $counts);
+
+                            Stockist_master::where('id', $Stockist_update_id)->update(['payment_mode'=>$mostFrequentPayMode, 'updated_at'=>date('Y-m-d H:i:s')]);
+                            
+                            echo "Most frequent payMode: " . $mostFrequentPayMode . "for this Stockist ID".$Stockist_update_id;
+                        endif;
+                    endforeach;
+                endif;
 
                 print_r(" send json object created");
                 print('-');

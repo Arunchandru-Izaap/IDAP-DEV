@@ -451,7 +451,7 @@
                   </li>
                   <li id="sidebar-item">
                     <a class="sidebar-link has-arrow waves-effect waves-dark"  href="javascript:void(0)" aria-expanded="false">
-                      <span class="hide-menu">Workflow Adjsut </span>
+                      <span class="hide-menu">Workflow Adjust </span>
                     </a>
                     <ul aria-expanded="false" class="collapse first-level">
                       <li class="sidebar-item">

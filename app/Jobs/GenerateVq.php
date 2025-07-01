@@ -214,7 +214,7 @@ class GenerateVq implements ShouldQueue
 
                     $check_inst_id = [];
                     foreach ($send_json['sku'] as $json_data) {
-                        if($send_json['revision_number'] != 0): // 0th revision not getting and update in idap trans table
+                        // if($send_json['revision_number'] != 0): // 0th revision not getting and update in idap trans table
                             $discountMode = $json_data['payment_mode'];
                             $updateMode = ($discountMode === 'CN') ? ['CN', 'DM'] : ['DM', 'CN'];
                             if($discountMode == 'CN'):
@@ -232,7 +232,7 @@ class GenerateVq implements ShouldQueue
                                     ->where('DISCOUNT_MODE', 'CN')
                                     ->update(['IS_DELETED' => 'X', 'METIS_UPD_DATE' => now()]);
                             endif;
-                        endif;
+                        // endif;
                         
                         $DiscTran = IdapDiscTran::create([
                             'FIN_YEAR' => $send_json['fin_year'],

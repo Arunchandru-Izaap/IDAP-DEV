@@ -100,7 +100,7 @@
                     </li>
                     <li id="Workflow_Adjust">
                       <a href="#WorkflowAdjust" id="workflow_adjust_main_menu" data-toggle="collapse" aria-expanded="{{ Route::is('adjust_workflow_initiator','workflow_adjust_product_wise') ? 'ture' : 'false' }}" class="menu-item dropdown-toggle {{ Route::is('adjust_workflow_initiator','workflow_adjust_product_wise') ? 'admin_active' : '' }}">
-                        Workflow <br> Adjsut
+                        Workflow <br> Adjust
                       </a>
                       <ul class="collapse list-unstyled {{ Route::is('adjust_workflow_initiator','workflow_adjust_product_wise') ? 'show1' : '' }}" id="WorkflowAdjust">
                         <li class="{{ Route::is('adjust_workflow_initiator') ? 'active' : '' }}">
