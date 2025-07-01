@@ -75,15 +75,15 @@ class SendApprovalReminderEmails extends Command
                     $daysPending = now()->diffInDays(Carbon::parse($approval_period[0]['start_date']));
                     $totalHours = now()->diffInHours(Carbon::parse($approval_period[0]['start_date']));
 
-                    echo "Difference: {$totalHours} hour(s)"; echo "\n";
-                    echo "created_at : ".$approval_period[0]['start_date']; echo "\n";
-                    echo "daysPending : ". $daysPending; echo "\n";
+                    // echo "Difference: {$totalHours} hour(s)"; echo "\n";
+                    // echo "created_at : ".$approval_period[0]['start_date']; echo "\n";
+                    // echo "daysPending : ". $daysPending; echo "\n";
                     
                     // Check if days passed is more than start_days
                     if ($daysPending >= $schedule->start_days) {
                         $daysAfterStart = $daysPending - $schedule->start_days;
-                        echo "daysAfterStart : ". $daysAfterStart; echo "\n";
-                        echo "Cal : ". ($daysAfterStart % $schedule->frequency_days); echo "\n";
+                        // echo "daysAfterStart : ". $daysAfterStart; echo "\n";
+                        // echo "Cal : ". ($daysAfterStart % $schedule->frequency_days); echo "\n";
                         // Now check frequency:
                         if ($schedule->frequency_days == 1 || $daysAfterStart % $schedule->frequency_days == 0) {
                             $vq_ids[] = $vq->id;
