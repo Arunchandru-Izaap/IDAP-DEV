@@ -121,7 +121,7 @@
               </tbody>
              
               </table>
-              <button id="add" class="orange-btn btn-lg" style="width:300px;margin: auto;display: block;"> Save </button>
+              <button id="add" class="orange-btn btn-lg d-none" style="width:300px;margin: auto;display: block;"> Save </button>
           </div>
       </div>
    </div>
@@ -534,7 +534,7 @@ $(document).ready(function(){
    
    $( ".apply-val" ).on( "click", function() {
     if ($(".manage_sku").length > 0) {
-      let text = "Are you sure you want to apply Disc PTR(%) for selected SKUs and Institutions? \n ' This change cannot be revert'";
+      let text = "Are you sure you want to apply Disc PTR(%) for selected SKUs and Institutions?";
       if (confirm(text) == true) {
         var ptrBulkValue = $("#entervalue").val();
         if(ptrBulkValue > 99){
