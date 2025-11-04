@@ -89,6 +89,9 @@
                     <li class="{{ Route::is('initiate_date') ? 'active' : '' }}">
                       <a href="{{ route('initiate_date') }}">Initiate Date</a>
                     </li>
+                    <li class="{{ Route::is('initiator-view-update-date') ? 'active' : '' }}">
+                      <a href="{{ route('initiator-view-update-date') }}">Cover Letter Date</a>
+                    </li>
                     <li class="{{ Route::is('initiator-discount-margin-list','initiator-discount-margin','initiator-discount-margin-edit') ? 'active' : '' }}">
                       <a href="{{ route('initiator-discount-margin-list') }}"> Discount Margin</a>
                     </li>

@@ -428,6 +428,8 @@ button.close {
         $('.select2-container').addClass('div_filter');
       }
     });
+    // Fix header misalignment after expand/collapse
+    $('#zero_config_view_log').DataTable().columns.adjust();
   });
   $(document).on('click', '.view-details-btn', function () {
     // Close any open collapses
@@ -435,6 +437,8 @@ button.close {
     // Open the clicked collapse
     const target = $(this).attr('data-target');
     $(target).collapse('show');
+    // Fix header misalignment after expand/collapse
+    $('#zero_config_view_log').DataTable().columns.adjust();
   });
   $('.close').on('click',  function(){
     $('#view_log_modal').modal('hide');

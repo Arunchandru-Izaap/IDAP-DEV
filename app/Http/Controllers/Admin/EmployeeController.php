@@ -10,6 +10,7 @@ use Session;//added on 31072024
 use App\Jobs\InstitutionDivisionMappingEmployee;//added on 31072024
 use App\Models\VoluntaryQuotationSkuListingStockist;
 use DB;
+use Illuminate\Validation\Rule;
 class EmployeeController extends Controller
 {
     public function index(){
@@ -36,14 +37,25 @@ class EmployeeController extends Controller
         }
     }
     public function store(Request $request){
+        // modified the validation for emp_code and div_code at 07102025 
         $validatedData = $request->validate([
-            'emp_code' => 'required|unique:employee_master',
-            'emp_name' => 'required',
-            'emp_email' => 'required',
-            'manager_name' => 'required',
-            'manager_email' => 'required',
-            'emp_category' => 'required',
+            //'emp_code' => 'required|unique:employee_master',
+            'emp_code' => ['required'],
+            'emp_name' => ['required'],
+            'emp_email' => ['required'],
+            'manager_name' => ['required'],
+            'manager_email' => ['required'],
+            'emp_category' => ['required'],
+            'div_code' => [
+                'required',
+                Rule::unique('employee_master')->where(function ($query) use ($request) {
+                    return $query->where('emp_code', $request->emp_code);
+                }),
+            ],
+        ], [
+            'div_code.unique' => 'This employee is already assigned to this  division.', // '. $request->div_code .'
         ]);
+
         $obj = new Employee;
         $obj->emp_code = $request['emp_code'];
         $obj->emp_name = $request['emp_name'];
@@ -125,15 +137,21 @@ class EmployeeController extends Controller
         }
     }
     public function update(Request $request){
+        // modified the validation for emp_code and div_code at 07102025 
         $validatedData = $request->validate([
-            'emp_code' => 'required',
-            'emp_name' => 'required',
-            'emp_email' => 'required',
-            'manager_name' => 'required',
-            'manager_email' => 'required',
-            'emp_type' => 'required',
-            //'div_type' => 'required',
-            'emp_category' => 'required',
+            'emp_code' => ['required'],
+            'emp_name' => ['required'],
+            'emp_email' => ['required'],
+            'manager_name' => ['required'],
+            'manager_email' => ['required'],
+            'div_code' => [
+                'required',
+                Rule::unique('employee_master')->where(function ($query) use ($request) {
+                    return $query->where('emp_code', $request->emp_code);
+                })->ignore($request['id']), // Ignore the current record
+            ],
+        ], [
+            'div_code.unique' => 'This employee is already assigned to this  division.', // '. $request->div_code .'
         ]);
         //dd($validatedData);
 	    $validatedData['div_name'] = $request['div_name'];

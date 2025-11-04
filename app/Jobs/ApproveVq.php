@@ -30,6 +30,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Models\Signature;
 use PDF;
 use App\Exports\InitiatorExport;
+use App\Exports\MultiSheetStockiestReportExport;
 use App\Models\IgnoredInstitutions;
 use App\Models\VoluntaryQuotationSkuListingStockist;
 use Excel;
@@ -887,7 +888,19 @@ class ApproveVq implements ShouldQueue
         }
         $spllExcel = Excel::raw(new InitiatorExport($id,'SPLL'), BaseExcel::XLSX);
         $spilExcel = Excel::raw(new InitiatorExport($id,'SPIL'), BaseExcel::XLSX);
-        print_r("Excel");
+        // print_r(count($spil_stockist_data));
+       // print_r(count($spll_stockist_data));
+       $marge_both_stockist_type = collect()
+        ->when(!empty($spil_stockist_data), fn($c) => $c->merge($spil_stockist_data))
+        ->when(!empty($spll_stockist_data), fn($c) => $c->merge($spll_stockist_data))
+        ->unique('id')   // keep only unique IDs
+        ->values();      // reset array keys;
+    
+        $Stockist_details = $marge_both_stockist_type->toArray();
+    
+        $StockiesCumulativeReport = Excel::raw(new MultiSheetStockiestReportExport($id, $Stockist_details), BaseExcel::XLSX);
+        //$StockiesCumulativeReport = '';
+        print_r("Export Excel");
         print('-');
         print_r(date('H:i:s'));
         print('-');
@@ -924,7 +937,7 @@ class ApproveVq implements ShouldQueue
         if($check_quotation_success_status == true):
             try{
                 if($spilExcelDataCount != 0 && $spllExcelDataCount != 0){
-                    Mail::send('admin.emails.send_quotation', $data, function($message)use($data,$spllPdf,$spilPdf,$spllExcel,$spilExcel,$spll_stockist_data,$spil_stockist_data) {
+                    Mail::send('admin.emails.send_quotation', $data, function($message)use($data,$spllPdf,$spilPdf,$spllExcel,$spilExcel,$spll_stockist_data,$spil_stockist_data, $StockiesCumulativeReport) {
                         $message->to($data['email'])
                         ->subject($data["subject"])
                         ->cc($data['email_cc'])
@@ -936,16 +949,17 @@ class ApproveVq implements ShouldQueue
                         if(count($spll_stockist_data) > 0) {
                             $message->attachData($spllPdf->output(), $data['institution_name'] . "-CL-SPLL.pdf");
                         }
-
-
                         if(count($spil_stockist_data) > 0) {
                             $message->attachData($spilPdf->output(), $data['institution_name'] . "-CL-SPIL.pdf");
+                        }
+                        if(!empty($StockiesCumulativeReport)) {
+                            $message->attachData($StockiesCumulativeReport, $data['institution_name'] . "-Stockies-Cumulative-Report.xlsx");
                         }
                     });
                 }
                 else if($spilExcelDataCount != 0 && $spllExcelDataCount == 0){
 
-                    Mail::send('admin.emails.send_quotation', $data, function($message)use($data,$spllPdf,$spilPdf,$spilExcel,$spll_stockist_data,$spil_stockist_data) {
+                    Mail::send('admin.emails.send_quotation', $data, function($message)use($data,$spllPdf,$spilPdf,$spilExcel,$spll_stockist_data,$spil_stockist_data, $StockiesCumulativeReport) {
                         $message->to($data['email'])
                         ->subject($data["subject"])
                         ->cc($data['email_cc'])
@@ -956,15 +970,17 @@ class ApproveVq implements ShouldQueue
                         {
                             $message->attachData($spllPdf->output(), $data['institution_name'] . "-CL-SPLL.pdf");
                         }
-
                         if(count($spil_stockist_data) > 0){
                             $message->attachData($spilPdf->output(), $data['institution_name'] . "-CL-SPIL.pdf");
+                        }
+                        if(!empty($StockiesCumulativeReport)) {
+                            $message->attachData($StockiesCumulativeReport, $data['institution_name'] . "-Stockies-Cumulative-Report.xlsx");
                         }
                     });
                 }
                 else if($spilExcelDataCount == 0 && $spllExcelDataCount != 0){
 
-                    Mail::send('admin.emails.send_quotation', $data, function($message)use($data,$spllPdf,$spilPdf,$spllExcel,$spll_stockist_data,$spil_stockist_data) {
+                    Mail::send('admin.emails.send_quotation', $data, function($message)use($data,$spllPdf,$spilPdf,$spllExcel,$spll_stockist_data,$spil_stockist_data, $StockiesCumulativeReport) {
                         $message->to($data['email'])
                         ->subject($data["subject"])
                         ->cc($data['email_cc'])
@@ -977,6 +993,9 @@ class ApproveVq implements ShouldQueue
 
                         if(count($spil_stockist_data) > 0){
                             $message->attachData($spilPdf->output(), $data['institution_name'] . "-CL-SPIL.pdf");
+                        }
+                        if(!empty($StockiesCumulativeReport)) {
+                            $message->attachData($StockiesCumulativeReport, $data['institution_name'] . "-Stockies-Cumulative-Report.xlsx");
                         }
                     });
                 }

@@ -54,7 +54,7 @@ class SendApprovalReminderEmails extends Command
         $vq_listing_controller = new VqListingController;
         $year = $vq_listing_controller->getFinancialYear(date('Y-m-d'),"Y");
         $current_date = strtotime(date('Y-m-d H:i:s'));
-
+        
         
         echo 'Initiate VQ'; echo "\n";
         // Parent VQ approver email notification
@@ -95,70 +95,77 @@ class SendApprovalReminderEmails extends Command
             endif;
 
             if(!empty($vq_ids)):
-                $data1['year'] = $year;
-                $data1['count_institution'] = count($vq_ids);
+                $vq_mail_sent_status = 0;
+                $maildata['year'] = $year;
+                $maildata['re_initiate'] = "initiated";
+                $maildata['link'] = env('APP_URL').'/login';
+                $Employee_email_details = Employee::where('emp_level','L'.$schedule->level)->where('emp_category','approver')->get()->toArray();
+                foreach($Employee_email_details as $Employee_email):
+                    $div_code =  $Employee_email['div_code'];
+                    $get_div_code_vq_ids = VoluntaryQuotation::select('voluntary_quotation.id')
+                        ->where('voluntary_quotation.current_level', $schedule->level)
+                        ->where('voluntary_quotation.year',$year)
+                        ->where('voluntary_quotation.parent_vq_id',0)
+                        ->leftJoin('voluntary_quotation_sku_listing','voluntary_quotation_sku_listing.vq_id','=','voluntary_quotation.id')
+                        ->whereIn('voluntary_quotation.id', $vq_ids)
+                        ->where('voluntary_quotation_sku_listing.div_id', $div_code)
+                        ->where('voluntary_quotation_sku_listing.is_deleted', 0)
+                        ->where('voluntary_quotation.is_deleted', 0)->get()->toArray();
 
-                if($data1['count_institution'] == 1):
-                    $single_vq = VoluntaryQuotation::where('current_level', $schedule->level)
-                        ->whereIn('id', $vq_ids)
-                        ->where('year', $year)
-                        ->where('is_deleted', 0)
-                        ->first();
-                    $data1["subject"] = "Action Required: iDAP VQ Process Initiated for ".$year."  for ".$single_vq->hospital_name."  (".$single_vq->institution_id.")";
-                else:
-                    $data1["subject"] = "Action Required: iDAP VQ Process Initiated for ".$year." for attached institutions (".$data1['count_institution']." institutions)";
-                endif;
-
-                $data1['re_initiate'] = "initiated";
-            
-                $emp_email = Employee::where('emp_level','L'.$schedule->level)->get()->toArray();
-                
-                $data1['email'] =  array_column($emp_email, 'emp_email');
-                
-                $data1['manager_email']= array_column($emp_email, 'manager_email');
-
-                $data1['link'] = env('APP_URL').'/login';
-
-                $data1['SendApprovalRemainderExport'] = Excel::raw(new SendApprovalReminderExport($year, $vq_ids, $schedule->level, $schedule->frequency_days), BaseExcel::XLSX);
-                try{
-                    $level = $schedule->level;
-                    Mail::send('admin.emails.approval_reminder', $data1, function($message)use($data1, $level) {
-                        $message->to($data1["email"]);
-                        if(!empty($data1["manager_email"])  && !empty(array_filter($data1['manager_email']))):
-                            $manager_cc = array_values(array_filter($data1['manager_email']));
-                            $message->cc($manager_cc);
+                    $div_code_vq_ids = (!empty($get_div_code_vq_ids)) ? array_values(array_unique(array_column($get_div_code_vq_ids, 'id'))) : array();
+                    
+                    if(!empty($div_code_vq_ids)):
+                        $maildata['count_institution'] = count($div_code_vq_ids);
+                        if($maildata['count_institution'] == 1):
+                            $single_vq = VoluntaryQuotation::where('current_level', $schedule->level)
+                                ->whereIn('id', $div_code_vq_ids)
+                                ->where('year', $year)
+                                ->where('is_deleted', 0)
+                                ->first();
+                            $maildata["subject"] = "Action Required: iDAP VQ Process Initiated for ".$year."  for ".$single_vq->hospital_name."  (".$single_vq->institution_id.")";
+                        else:
+                            $maildata["subject"] = "Action Required: iDAP VQ Process Initiated for ".$year." for attached institutions (".$maildata['count_institution']." institutions)";
                         endif;
-                        $message->subject($data1["subject"]);
-                        if($data1['count_institution'] > 0){
-                            $message->attachData($data1["SendApprovalRemainderExport"], 'pending-institutions-list.xlsx');
+                        // print_r(count($div_code_vq_ids)); echo "\n";
+                        $maildata['emp_email'] =  $Employee_email['emp_email'];
+                        $maildata['manager_email'] =  $Employee_email['manager_email'];
+                        $maildata['SendApprovalRemainderExport'] = Excel::raw(new SendApprovalReminderExport($year, $div_code_vq_ids, $schedule->level, 1), BaseExcel::XLSX);
+                        try{
+                            $level = $schedule->level;
+                            Mail::send('admin.emails.approval_reminder', $maildata, function($message)use($maildata, $level) {
+                                $message->to($maildata["emp_email"]);
+                                if(!empty($maildata["manager_email"])):
+                                    $manager_cc = $maildata['manager_email'];
+                                    $message->cc($manager_cc);
+                                endif;
+                                $message->subject($maildata["subject"]);
+                                if($maildata['count_institution'] > 0){
+                                    $message->attachData($maildata["SendApprovalRemainderExport"], 'pending-institutions-list.xlsx');
+                                }
+                            });
+                        }catch(JWTException $exception){
+                            $this->serverstatuscode = "0";
+                            $this->serverstatusdes = $exception->getMessage();
                         }
-                    });
-
-                }catch(JWTException $exception){
-                    $this->serverstatuscode = "0";
-                    $this->serverstatusdes = $exception->getMessage();
-                }
-                if (Mail::failures()) {
-                    $this->statusdesc  =   "Error sending mail";
-                    $this->statuscode  =   "0";
-        
-                }else{
-                echo "mail sent "; echo "\n";
-                // print_r('mail sent');
-                Log::debug('Send approver parent vq for L'.$schedule->level);
-                    $this->statusdesc  =   "Message sent Succesfully";
-                    $this->statuscode  =   "1";
-                }
+                        if (!Mail::failures()) {
+                            $vq_mail_sent_status++;
+                            $this->statusdesc  =   "Message sent Succesfully";
+                            $this->statuscode  =   "1";
+                        }
+                    endif;
+                endforeach;
+                if($vq_mail_sent_status > 0):
+                    echo "mail sent "; echo "\n";
+                    Log::debug('Send approver parent vq for L'.$schedule->level);
+                endif;
             endif;
         }
         
         
-
         echo 'Re-Initiate VQ Fast'; echo "\n";
         //reinitiate Vq Fast Approval Process
         $approval_period_reinitvq_fast = ApprovalPeriod::where('type', 'reinitvq_fast')->get();
         foreach($approval_period_reinitvq_fast as $reinitvq_fast){
-
             $pendingVQs = VoluntaryQuotation::where('year', $year)
                 ->where('current_level', $reinitvq_fast->level)
                 ->where('parent_vq_id', '!=', 0)
@@ -183,68 +190,76 @@ class SendApprovalReminderEmails extends Command
                         $reinitvq_fast_vq_ids[] = $vq->id;
                     }
                 }
-
             endif;
 
             if(!empty($reinitvq_fast_vq_ids)):
-                $data1['year'] = $year;
-                $data1['count_institution'] = count($reinitvq_fast_vq_ids);
+                $vq_fast_mail_sent_status = 0;
+                $maildata['year'] = $year;
+                $maildata['re_initiate'] = "Re-initiated";
+                $maildata['link'] = env('APP_URL').'/login';
+                $Employee_email_details = Employee::where('emp_level','L'.$reinitvq_fast->level)->where('emp_category','approver')->get()->toArray();
+                foreach($Employee_email_details as $Employee_email):
+                    $div_code =  $Employee_email['div_code'];
+                    $get_div_code_vq_ids = VoluntaryQuotation::select('voluntary_quotation.id')
+                        ->where('current_level', $reinitvq_fast->level)
+                        ->where('year',$year)
+                        ->leftJoin('voluntary_quotation_sku_listing','voluntary_quotation_sku_listing.vq_id','=','voluntary_quotation.id')
+                        ->whereIn('voluntary_quotation.id', $reinitvq_fast_vq_ids)
+                        ->where('voluntary_quotation_sku_listing.div_id', $div_code)
+                        ->where('voluntary_quotation_sku_listing.is_deleted', 0)
+                        ->where('voluntary_quotation.is_deleted', 0)->get()->toArray();
 
-                if($data1['count_institution'] == 1):
-                    $single_vq = VoluntaryQuotation::where('current_level', $reinitvq_fast->level)
-                        ->whereIn('id', $reinitvq_fast_vq_ids)
-                        ->where('year', $year)
-                        ->where('is_deleted', 0)
-                        ->first();
-                    $data1["subject"] = "Action Required: iDAP VQ Process Re-Initiated for ".$year."  for ".$single_vq->hospital_name."  (".$single_vq->institution_id.")";
-                else:
-                    $data1["subject"] = "Action Required: iDAP VQ Process Re-Initiated for ".$year." for attached institutions (".$data1['count_institution']." institutions)";
-                endif;
-
-                $data1['re_initiate'] = "Re-initiated";
-
-                $emp_email = Employee::where('emp_level','L'.$reinitvq_fast->level)->get()->toArray();
-                
-                $data1['email'] =  array_column($emp_email, 'emp_email');
-                
-                $data1['manager_email']= array_column($emp_email, 'manager_email');
-
-                $data1['link'] = env('APP_URL').'/login';
-
-                $data1['SendApprovalRemainderExport'] = Excel::raw(new SendApprovalReminderExport($year, $reinitvq_fast_vq_ids, $reinitvq_fast->level, 1), BaseExcel::XLSX);
-                try{
-                    $level = $reinitvq_fast->level;
-                    Mail::send('admin.emails.approval_reminder', $data1, function($message)use($data1, $level) {
-                        $message->to($data1["email"]);
-                        if(!empty($data1["manager_email"])  && !empty(array_filter($data1['manager_email']))):
-                            $manager_cc = array_values(array_filter($data1['manager_email']));
-                            $message->cc($manager_cc);
+                    $reinitvq_fast_div_code_vq_ids = (!empty($get_div_code_vq_ids)) ? array_values(array_unique(array_column($get_div_code_vq_ids, 'id'))) : array();
+                    
+                    // print_r(count($reinitvq_fast_div_code_vq_ids)); echo "\n";
+                    if(!empty($reinitvq_fast_div_code_vq_ids)):
+                        $maildata['count_institution'] = count($reinitvq_fast_div_code_vq_ids);
+                        if($maildata['count_institution'] == 1):
+                            $single_vq = VoluntaryQuotation::where('current_level', $reinitvq_fast->level)
+                                ->whereIn('id', $reinitvq_fast_div_code_vq_ids)
+                                ->where('year', $year)
+                                ->where('is_deleted', 0)
+                                ->first();
+                            $maildata["subject"] = "Action Required: iDAP VQ Process Re-Initiated for ".$year."  for ".$single_vq->hospital_name."  (".$single_vq->institution_id.")";
+                        else:
+                            $maildata["subject"] = "Action Required: iDAP VQ Process Re-Initiated for ".$year." for attached institutions (".$maildata['count_institution']." institutions)";
                         endif;
-                        $message->subject($data1["subject"]);
-                        if($data1['count_institution'] > 0){
-                            $message->attachData($data1["SendApprovalRemainderExport"], 'pending-institutions-list.xlsx');
+                        $maildata['emp_email'] =  $Employee_email['emp_email'];
+                        $maildata['manager_email'] =  $Employee_email['manager_email'];
+                        $maildata['SendApprovalRemainderExport'] = Excel::raw(new SendApprovalReminderExport($year, $reinitvq_fast_div_code_vq_ids, $reinitvq_fast->level, 1), BaseExcel::XLSX);
+                        try{
+                            $level = $reinitvq_fast->level;
+                            Mail::send('admin.emails.approval_reminder', $maildata, function($message)use($maildata, $level) {
+                                $message->to($maildata["emp_email"]);
+                                if(!empty($maildata["manager_email"])):
+                                    $manager_cc = $maildata['manager_email'];
+                                    $message->cc($manager_cc);
+                                endif;
+                                $message->subject($maildata["subject"]);
+                                if($maildata['count_institution'] > 0){
+                                    $message->attachData($maildata["SendApprovalRemainderExport"], 'pending-institutions-list.xlsx');
+                                }
+                            });
+                        }catch(JWTException $exception){
+                            $this->serverstatuscode = "0";
+                            $this->serverstatusdes = $exception->getMessage();
                         }
-                    });
-
-                }catch(JWTException $exception){
-                    $this->serverstatuscode = "0";
-                    $this->serverstatusdes = $exception->getMessage();
-                }
-                if (Mail::failures()) {
-                    $this->statusdesc  =   "Error sending mail";
-                    $this->statuscode  =   "0";
-        
-                }else{
-                echo "mail sent "; echo "\n";
-                // print_r('mail sent');
-                Log::debug('Send approver parent vq for L'.$reinitvq_fast->level);
-                    $this->statusdesc  =   "Message sent Succesfully";
-                    $this->statuscode  =   "1";
-                }
+                        if (!Mail::failures()) {
+                            $vq_fast_mail_sent_status++;
+                            $this->statusdesc  =   "Message sent Succesfully";
+                            $this->statuscode  =   "1";
+                        }
+                    endif;
+                endforeach;
+                if($vq_fast_mail_sent_status > 0):
+                    echo "mail sent "; echo "\n";
+                    Log::debug('Send approver parent vq for L'.$reinitvq_fast->level);
+                endif;
             endif;
         }
-    
         
+        
+
         echo 'Re-Initiate VQ Normal'; echo "\n";
         //reinitiate Vq Normal Approval Process
         $approval_period_reinitvq_normal = ApprovalPeriod::where('type', 'reinitvq_normal')->get();
@@ -264,10 +279,6 @@ class SendApprovalReminderEmails extends Command
                 foreach ($pendingVQs as $vq) {
                     $daysPending = now()->diffInDays(Carbon::parse($vq->created_at));
                     $totalHours = now()->diffInHours(Carbon::parse($vq->created_at));
-
-                    // echo "Difference: {$totalHours} hour(s)"; echo "\n";
-                    // echo "created_at : ".$vq->created_at; echo "\n";
-                    // echo "daysPending : ". $daysPending; echo "\n";
                     
                     // Check if days passed is more than start_days
                     if ($daysPending <= $reinitvq_normal->days) {
@@ -275,66 +286,73 @@ class SendApprovalReminderEmails extends Command
                     }
                 }
             endif;
-
             if(!empty($reinitvq_normal_vq_ids)):
-                $data1['year'] = $year;
-                $data1['count_institution'] = count($reinitvq_normal_vq_ids);
-
-                if($data1['count_institution'] == 1):
-                    $single_vq = VoluntaryQuotation::where('current_level', $reinitvq_normal->level)
-                        ->whereIn('id', $reinitvq_normal_vq_ids)
-                        ->where('year', $year)
-                        ->where('is_deleted', 0)
-                        ->first();
-                    $data1["subject"] = "Action Required: iDAP VQ Process Re-Initiated for ".$year."  for ".$single_vq->hospital_name."  (".$single_vq->institution_id.")";
-                else:
-                    $data1["subject"] = "Action Required: iDAP VQ Process Re-Initiated for ".$year." for attached institutions (".$data1['count_institution']." institutions)";
-                endif;
-
-                $data1['re_initiate'] = "Re-initiated";
-                $data1['link'] = env('APP_URL').'/login';
-
-                $emp_email = Employee::where('emp_level','L'.$reinitvq_normal->level)->get()->toArray();
+                $vq_normal_mail_sent_status = 0;
+                $maildata['year'] = $year;
+                $maildata['re_initiate'] = "Re-initiated";
+                $maildata['link'] = env('APP_URL').'/login';
                 
-                $data1['email'] =  array_column($emp_email, 'emp_email');
-                
-                $data1['manager_email'] = array_column($emp_email, 'manager_email');
+                $Employee_email_details = Employee::where('emp_level','L'.$reinitvq_normal->level)->where('emp_category','approver')->get()->toArray();
+                foreach($Employee_email_details as $Employee_email):
+                    $div_code =  $Employee_email['div_code'];
+                    $get_div_code_vq_ids = VoluntaryQuotation::select('voluntary_quotation.id')
+                        ->where('current_level', $reinitvq_normal->level)
+                        ->where('year',$year)
+                        ->leftJoin('voluntary_quotation_sku_listing','voluntary_quotation_sku_listing.vq_id','=','voluntary_quotation.id')
+                        ->whereIn('voluntary_quotation.id', $reinitvq_normal_vq_ids)
+                        ->where('voluntary_quotation_sku_listing.div_id', $div_code)
+                        ->where('voluntary_quotation_sku_listing.is_deleted', 0)
+                        ->where('voluntary_quotation.is_deleted', 0)->get()->toArray();
 
-                $data1['SendApprovalRemainderExport'] = Excel::raw(new SendApprovalReminderExport($year, $reinitvq_normal_vq_ids, $reinitvq_normal->level, 1), BaseExcel::XLSX);
-                try{
-                    $level = $reinitvq_normal->level;
-                    Mail::send('admin.emails.approval_reminder', $data1, function($message)use($data1, $level) {
-                        $message->to($data1["email"]);
-                        if(!empty($data1["manager_email"]) && !empty(array_filter($data1['manager_email']))):
-                            $manager_cc = array_values(array_filter($data1['manager_email']));
-                            $message->cc($manager_cc);
+                    $reinitvq_normal_div_code_vq_ids = (!empty($get_div_code_vq_ids)) ? array_values(array_unique(array_column($get_div_code_vq_ids, 'id'))) : array();
+                    // print_r(count($reinitvq_normal_div_code_vq_ids)); echo "\n";
+                    if(!empty($reinitvq_normal_div_code_vq_ids)):
+                        $maildata['count_institution'] = count($reinitvq_normal_div_code_vq_ids);
+                        if($maildata['count_institution'] == 1):
+                            $single_vq = VoluntaryQuotation::where('current_level', $reinitvq_normal->level)
+                                ->whereIn('id', $reinitvq_normal_div_code_vq_ids)
+                                ->where('year', $year)
+                                ->where('is_deleted', 0)
+                                ->first();
+                            $maildata["subject"] = "Action Required: iDAP VQ Process Re-Initiated for ".$year."  for ".$single_vq->hospital_name."  (".$single_vq->institution_id.")";
+                        else:
+                            $maildata["subject"] = "Action Required: iDAP VQ Process Re-Initiated for ".$year." for attached institutions (".$maildata['count_institution']." institutions)";
                         endif;
-                        $message->subject($data1["subject"]);
-                        if($data1['count_institution'] > 0){
-                            $message->attachData($data1["SendApprovalRemainderExport"], 'pending-institutions-list.xlsx');
+                        $maildata['emp_email'] =  $Employee_email['emp_email'];
+                        $maildata['manager_email'] =  $Employee_email['manager_email'];
+                        $maildata['SendApprovalRemainderExport'] = Excel::raw(new SendApprovalReminderExport($year, $reinitvq_normal_div_code_vq_ids, $reinitvq_normal->level, 1), BaseExcel::XLSX);
+                        try{
+                            $level = $reinitvq_normal->level;
+                            Mail::send('admin.emails.approval_reminder', $maildata, function($message)use($maildata, $level) {
+                                $message->to($maildata["emp_email"]);
+                                if(!empty($maildata["manager_email"])):
+                                    $manager_cc = $maildata['manager_email'];
+                                    $message->cc($manager_cc);
+                                endif;
+                                $message->subject($maildata["subject"]);
+                                if($maildata['count_institution'] > 0){
+                                    $message->attachData($maildata["SendApprovalRemainderExport"], 'pending-institutions-list.xlsx');
+                                }
+                            });
+                        }catch(JWTException $exception){
+                            $this->serverstatuscode = "0";
+                            $this->serverstatusdes = $exception->getMessage();
                         }
-                    });
-
-                }catch(JWTException $exception){
-                    $this->serverstatuscode = "0";
-                    $this->serverstatusdes = $exception->getMessage();
-                }
-                if (Mail::failures()) {
-                    $this->statusdesc  =   "Error sending mail";
-                    $this->statuscode  =   "0";
-        
-                }else{
-                echo "mail sent "; echo "\n";
-                // print_r('mail sent');
-                Log::debug('Send approver parent vq for L'.$reinitvq_normal->level);
-                    $this->statusdesc  =   "Message sent Succesfully";
-                    $this->statuscode  =   "1";
-                }
+                        if (!Mail::failures()) {
+                            $vq_normal_mail_sent_status++;
+                            $this->statusdesc  =   "Message sent Succesfully";
+                            $this->statuscode  =   "1";
+                        }
+                    endif;
+                endforeach;
+                if($vq_normal_mail_sent_status > 0):
+                    echo "mail sent "; echo "\n";
+                    Log::debug('Send approver parent vq for L'.$reinitvq_normal->level);
+                endif;
             endif;
         }
         
         
-
         return 0;
     }
     

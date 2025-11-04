@@ -438,6 +438,7 @@
           errorHtml += '</ul>';
           $('#pendingMessage').append(errorHtml);
           $('#firstlevelerror').modal('show');
+          return;
         }
         if(initatorLevel.length > 0) {
           $('#loader1').hide();
@@ -448,6 +449,7 @@
           errorHtml += '</ul>';
           $('#pendingMessage1').append(errorHtml);
           $('#lastlevelerror').modal('show');
+          return;
         }
         if(ceoLevel.length > 0) {
           $('#loader1').hide();
@@ -458,6 +460,7 @@
           errorHtml += '</ul>';
           $('#pendingMessage2').append(errorHtml);
           $('#ceolevelerror').modal('show');
+          return;
         } 
         if(rsmLevel.length == 0 && initatorLevel.length == 0 && ceoLevel.length == 0) {
           //console.log('Selected items:', selected);

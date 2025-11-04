@@ -3247,6 +3247,7 @@ class VqListingController extends Controller
         // Apply common search
         if (!empty($common_search)) {
             $common_search = str_replace('-', '%', $common_search);
+            $common_search = addslashes($common_search);
             $sql .= " AND (
                 vq.hospital_name LIKE '%$common_search%' OR
                 vq.institution_id LIKE '%$common_search%' OR

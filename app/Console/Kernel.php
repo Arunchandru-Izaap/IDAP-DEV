@@ -32,6 +32,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('institution_division_mapping:update')->dailyAt('07:00');//runs daily at 6 am
 
         $schedule->command('approval:daily')->dailyAt('05:00');//runs daily at 5am
+        $schedule->command('approvalremainderemails:daily')->dailyAt('06:00');//runs daily at 6am
         $schedule->command('failed_request:daily')->dailyAt('07:00');//runs daily at 7am
 
         // Schedule daily command to run every day at 7 AM

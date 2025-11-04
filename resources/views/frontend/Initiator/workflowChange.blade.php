@@ -168,6 +168,11 @@
                         Workflow Adjustment
                       </a>
                     </li>
+                    <li class="active">
+                      <a href="">
+                        Institutions Wise
+                      </a>
+                    </li>
                 </ul>
                 <!-- Page content-->
                 <div class="container-fluid">
@@ -391,20 +396,20 @@
     $('.action_btn').click(function(e){
       var userConfirmed = confirm("Are you sure you want to "+$(this).text()+"?");
       if(userConfirmed) {
-      $('#loader1').show(); 
-      e.preventDefault()
-      selected = [];
-      initatorLevel = [];
-      rsmLevel = [];
-      ceoLevel = [];
-      invalidLevel = [];
-      var btn_type = $(this).attr('btn-fn');
-      $('#pendingMessage').empty();
-      $('#pendingMessage1').empty();
-      $('#pendingMessage2').empty();
-      $('#pendingMessage3').empty();
-      var rowcollection = table.$(".dt-checkboxes:checked", {"page": "all"});
-      rowcollection.each(function(index,elem){
+        $('#loader1').show(); 
+        e.preventDefault()
+        selected = [];
+        initatorLevel = [];
+        rsmLevel = [];
+        ceoLevel = [];
+        invalidLevel = [];
+        var btn_type = $(this).attr('btn-fn');
+        $('#pendingMessage').empty();
+        $('#pendingMessage1').empty();
+        $('#pendingMessage2').empty();
+        $('#pendingMessage3').empty();
+        var rowcollection = table.$(".dt-checkboxes:checked", {"page": "all"});
+        rowcollection.each(function(index,elem){
           var row = $(elem).closest("tr");
           var vq_id = row.find('.vq_id').text();
           var institution_id = row.find('.institution_id').text()
@@ -445,6 +450,7 @@
           errorHtml += '</ul>';
           $('#pendingMessage').append(errorHtml);
           $('#firstlevelerror').modal('show');
+          return;
         }
         if(initatorLevel.length > 0) {
           $('#loader1').hide();
@@ -455,6 +461,7 @@
           errorHtml += '</ul>';
           $('#pendingMessage1').append(errorHtml);
           $('#lastlevelerror').modal('show');
+          return;
         } 
         if(ceoLevel.length > 0) {
           $('#loader1').hide();
@@ -465,6 +472,7 @@
           errorHtml += '</ul>';
           $('#pendingMessage2').append(errorHtml);
           $('#ceolevelerror').modal('show');
+          return;
         } 
         if(rsmLevel.length == 0 && initatorLevel.length == 0&& ceoLevel.length == 0) {
           //console.log('Selected items:', selected);

@@ -315,6 +315,7 @@
         },
         // Define other column definitions here
       ],
+      autoWidth: false ,
       order: [[0, 'desc']],
       'language': {   "emptyTable": "<span class='no-data-message'>Processing...</span>", 'paginate': {      'previous': "<img src='{{ asset('admin/images/left.svg') }}' class='left-block' alt=''> <img src='{{ asset('admin/images/left1.svg') }}' class='disbpr' alt=''>",      'next': "<img src='{{ asset('admin/images/right.svg') }}' class='neblk' alt=''> <img src='{{ asset('admin/images/right1.svg') }}' class='disbn' alt=''>"    }  },//added empty table custom message
       scrollX: true,
@@ -338,6 +339,7 @@
         $('.select2-container').addClass('div_filter');
       }
     });
+    $('#zero_config_view_log').DataTable().columns.adjust();
   });
   $(document).on('click', '.view-details-btn', function () {
     // Close any open collapses
@@ -346,6 +348,14 @@
     // Open the clicked collapse
     const target = $(this).attr('data-target');
     $(target).collapse('show');
+    // Recalculate column widths safely
+    setTimeout(function () {
+        $('#zero_config_view_log').DataTable().columns.adjust();
+    }, 100); // small delay to let collapse animation finish
+  });
+  $(document).on('hidden.bs.collapse', '.collapse', function () {
+    // When a collapse closes, fix widths again
+    $('#zero_config_view_log').DataTable().columns.adjust();
   });
   
   $(document).ready(function () {
@@ -374,7 +384,7 @@
   });
   
   $(document).on('select2-container--open', function() {
-    alter('ff');
+    // alter('ff');
     setTimeout(() => {
       document.querySelector('.select2-search__field').focus();
     },2000);

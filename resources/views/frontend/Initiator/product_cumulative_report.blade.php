@@ -861,7 +861,7 @@
             // Add ajax call for filter division by brand here
             var settings = {
                 "url": "/{{$emp_category}}/filter_division_by_brand",
-                "method": "GET",
+                "method": "POST",
                 "timeout": 0,
                 "headers": {
                 "Accept-Language": "application/json",

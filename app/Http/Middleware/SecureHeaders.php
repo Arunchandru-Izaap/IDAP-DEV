@@ -78,6 +78,10 @@ class SecureHeaders
 		}
 		$response->header('Server', null);
 		$response->header('X-Powered-By', null);
+		$response->headers->remove('X-Powered-By');
+		$response->header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
+			->header('Pragma','no-cache')
+            ->header('Expires','0');
 		// added on 18042024 start
 		// Set Content-Security-Policy header with advanced configuration
 		$csp = "default-src *; script-src * 'unsafe-inline' 'unsafe-eval';style-src * 'unsafe-inline';font-src * https://fonts.gstatic.com data:; img-src  * data: 'unsafe-inline'; connect-src * 'unsafe-inline'; frame-src *;";

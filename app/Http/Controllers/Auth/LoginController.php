@@ -81,7 +81,7 @@ class LoginController extends Controller
             Employee::where('emp_code', $input['userId'])->update(['is_login_now' => 1, 'last_login' => now()]);
         }*/
         /*check for concurrent login ends*/
-      $client = new \GuzzleHttp\Client(['verify'=>false]);
+        $client = new \GuzzleHttp\Client(['verify'=>false]);
         $res = $client->post(
             env('API_URL').'/api/generateOtp',
             [
@@ -92,7 +92,7 @@ class LoginController extends Controller
         );
         $data = json_decode($res->getBody(),true);
         // Code to generate OTP from pragati api ends here
-//         dd($data);
+        //         dd($data);
         if( $data['Status'] == true){
             return view('auth.verifyOtp')->with([
                 'status' => true,
@@ -146,8 +146,8 @@ class LoginController extends Controller
             ]);
         }
         $input['otp'] = $this->decryptOtp($input['otp'], '2023');
-       //$ip_address = env('APP_URL') == 'https://idap.noesis.dev' ? '172.30.58.98': request()->ip();
-    $ip_address = '172.30.58.98';
+        //$ip_address = env('APP_URL') == 'https://idap.noesis.dev' ? '172.30.58.98': request()->ip();
+        $ip_address = '172.30.58.98';
         // Code to verify OTP starts here
         $this->validate($request, [
             'otp' => 'required',
@@ -202,6 +202,7 @@ class LoginController extends Controller
             }else{
                 if(auth()->attempt(array('email' => $input['userId'], 'password' => "noesistech")))
                 {
+                    $request->session()->regenerate();
                     if (auth()->user()->user_type == 'Administrator') {
                         return redirect()->route('home');
                     }else{
@@ -218,13 +219,13 @@ class LoginController extends Controller
             }
             
         }else{
-   return view('auth.verifyOtp')->with([
+            return view('auth.verifyOtp')->with([
                 'status' => false,
                 'userId' => $input['userId'],
                 'message' => 'Please enter correct the OTP!',
             ]);
 
-         /*   if(auth()->attempt(array('email' => $input['userId'], 'password' => "noesistech")))
+            /*   if(auth()->attempt(array('email' => $input['userId'], 'password' => "noesistech")))
             {
                 if (auth()->user()->user_type == 'Administrator') {
                     return redirect()->route('home');
@@ -240,9 +241,10 @@ class LoginController extends Controller
             }
            */
         }
-//dd("hi");
+        //dd("hi");
         if(auth()->attempt(array('email' => $email, 'password' => $password)))
         {
+            $request->session()->regenerate();
             if (auth()->user()->user_type == 'Administrator') {
                 return redirect()->route('home');
             }else{
@@ -263,6 +265,8 @@ class LoginController extends Controller
         Session::flush();
         
         Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
 
         return redirect('login');
     }

@@ -97,11 +97,15 @@
                               <img src="{{ asset('admin/images/blueeye.svg') }}">
                               <p>Comments</p>
                             </a>
-
-                            <a id="cancel" href="#" class="btn-grey">
+                            <!-- /**
+                            Modified by: Arunchandru on 23-10-2017.
+                            Summary of change : cancel button—no need for the client.
+                            *
+                            */ -->
+                            <!-- <a id="cancel" href="#" class="btn-grey">
                               <img src="{{ asset('admin/images/cancel.svg') }}">
                               <p>Cancel VQ</p>
-                            </a>
+                            </a> -->
                             <button id="approve" class="orange-btn">
                               APPROVE AND SUBMIT
                             </button>

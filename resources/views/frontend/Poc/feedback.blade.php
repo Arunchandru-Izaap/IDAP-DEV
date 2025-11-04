@@ -60,7 +60,7 @@
                     <h5>Add Comment</h5>
                     <div class="start-end-date">
                         <div class="input-group">
-                                <textarea class="form-control" name="comment" placeholder="Comment" required=""></textarea>
+                                <textarea class="form-control" name="comment" id="validate-comment" placeholder="Comment" required=""></textarea>
                         </div>
                     </div>
 
@@ -336,6 +336,32 @@
 </script> -->
 <script src="{{asset('frontend/js/select2.js')}}"></script>
 <script type="text/javascript">
+    $("#validate-comment").on('keyup', function () {
+        const comment = $(this).val().trim(); // Get textarea value correctly
+        const decodedComment = $("<textarea/>").html(comment).text(); // Decode HTML entities
+        const tagPattern = /<[^>]*>/g;
+        let isValid = true;
+        console.log(decodedComment);
+        if (tagPattern.test(comment)) {
+            alert("HTML tags are not allowed in the comment.");
+            isValid = false;
+        }
+        if (decodedComment.length > 1000) {
+            alert("Comment must be less than 1000 characters.");
+            isValid = false;
+        }
+        if (!/^[\w\s.,'"!?()@#%&-]*$/i.test(decodedComment)) {
+            alert("Comment contains unsupported characters.");
+            isValid = false;
+        }
+
+        if (isValid) {
+            $('#add_new_counter_btn').prop("disabled", false);
+        } else {
+            $('#add_new_counter_btn').prop("disabled", true);
+        }
+    });
+
     $('#institute_drop').append(`<option value='all'>All</option>`)
     $('#institute_drop').select2({
     placeholder: 'Select institutions',

@@ -435,6 +435,11 @@
                     >
                   </li>
                   <li class="sidebar-item">
+                    <a href="{{url('/admin/view_update_date')}}" class="sidebar-link">
+                    <i></i>
+                      <span class="hide-menu" style="margin-left:10px;"> Cover Letter Date </span></a>
+                  </li>
+                  <li class="sidebar-item">
                     <a href="{{url('/admin/discount-margin-list')}}" class="sidebar-link">
                     <i></i>
                       <span class="hide-menu" style="margin-left:10px;"> Discount Margin </span></a>

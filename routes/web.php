@@ -90,7 +90,7 @@ Route::group(['prefix'=>'approver', 'middleware' => ['isUser','isApprover']],fun
     Route::get('/product_cumulative_report', [App\Http\Controllers\StaticPages\VoluntaryQuotationController::class, 'productwiseCumulativeReport'])->name('approver_product_cumulative_report');
     Route::POST('/cumulative_report_new', [App\Http\Controllers\Api\VqListingController::class, 'cumulative_report_new'])->name('cumulative_report_new');
     Route::get('/CumulativeReportExport', [App\Http\Controllers\Api\VqListingController::class, 'CumulativeReportExport'])->name('approver-export-cumulative-report');//for ceo export
-    Route::get('/filter_division_by_brand', [App\Http\Controllers\Api\VqListingController::class, 'filter_division_by_brand'])->name('filter_division_by_brand');
+    Route::POST('/filter_division_by_brand', [App\Http\Controllers\Api\VqListingController::class, 'filter_division_by_brand'])->name('filter_division_by_brand');
     Route::get('/cumulative_report_get_stockist', [App\Http\Controllers\Api\VqListingController::class, 'cumulative_report_get_stockist'])->name('cumulative_report_get_stockist');
     Route::post('/set_session_filter_report', [App\Http\Controllers\Api\VqListingController::class, 'set_session_filter_report'])->name('set_session_filter_report');
 });
@@ -255,11 +255,18 @@ Route::group(['prefix'=>'initiator', 'middleware' => ['isUser','isInitiator']],f
     Route::get('/initiate_date_add', [App\Http\Controllers\StaticPages\VoluntaryQuotationController::class, 'initiateDateAdd'])->name('initiate_date_add');
     Route::post('/initiate_date', [App\Http\Controllers\StaticPages\VoluntaryQuotationController::class, 'initiateDateUpdate'])->name('initiate_date_update');
 
+    /* Coverletter Update date */
+    Route::get('/view_update_date', [App\Http\Controllers\Admin\UpdateCoverletterDateController::class, 'view_update_date'])->name('initiator-view-update-date');
+    Route::POST('/update_coverletter_date', [App\Http\Controllers\Admin\UpdateCoverletterDateController::class, 'update_coverletter_date'])->name('initiator-update-coverletter-date');
+    Route::POST('/GetInstutitionRevisions', [App\Http\Controllers\Admin\UpdateCoverletterDateController::class, 'GetInstutitionRevisions'])->name('GetInstutitionRevisions');
+    Route::get('/cover_letter_date_updated_view_logs_ajax', [App\Http\Controllers\Admin\UpdateCoverletterDateController::class, 'GetCoverLetterUpdatedViewLogs'])->name('GetCoverLetterUpdatedViewLogs');
+
+
     /** product wise cumulative report */
     Route::get('/product_cumulative_report', [App\Http\Controllers\StaticPages\VoluntaryQuotationController::class, 'productwiseCumulativeReport'])->name('product_cumulative_report');
     Route::POST('/cumulative_report_new', [App\Http\Controllers\Api\VqListingController::class, 'cumulative_report_new'])->name('cumulative_report_new');
     Route::get('/CumulativeReportExport', [App\Http\Controllers\Api\VqListingController::class, 'CumulativeReportExport'])->name('initiator-export-cumulative-report');//for ceo export
-    Route::get('/filter_division_by_brand', [App\Http\Controllers\Api\VqListingController::class, 'filter_division_by_brand'])->name('filter_division_by_brand');
+    Route::POST('/filter_division_by_brand', [App\Http\Controllers\Api\VqListingController::class, 'filter_division_by_brand'])->name('filter_division_by_brand');
     Route::get('/cumulative_report_get_stockist', [App\Http\Controllers\Api\VqListingController::class, 'cumulative_report_get_stockist'])->name('cumulative_report_get_stockist');
     Route::post('/set_session_filter_report', [App\Http\Controllers\Api\VqListingController::class, 'set_session_filter_report'])->name('set_session_filter_report');
     
@@ -302,7 +309,7 @@ Route::group(['prefix'=>'poc', 'middleware' => ['isUser','isPoc']],function() {
     Route::get('/product_cumulative_report', [App\Http\Controllers\StaticPages\VoluntaryQuotationController::class, 'productwiseCumulativeReport'])->name('poc_product_cumulative_report');
     Route::POST('/cumulative_report_new', [App\Http\Controllers\Api\VqListingController::class, 'cumulative_report_new'])->name('cumulative_report_new');
     Route::get('/CumulativeReportExport', [App\Http\Controllers\Api\VqListingController::class, 'CumulativeReportExport'])->name('poc-export-cumulative-report');//for ceo export
-    Route::get('/filter_division_by_brand', [App\Http\Controllers\Api\VqListingController::class, 'filter_division_by_brand'])->name('filter_division_by_brand');
+    Route::POST('/filter_division_by_brand', [App\Http\Controllers\Api\VqListingController::class, 'filter_division_by_brand'])->name('filter_division_by_brand');
     Route::get('/cumulative_report_get_stockist', [App\Http\Controllers\Api\VqListingController::class, 'cumulative_report_get_stockist'])->name('cumulative_report_get_stockist');
     Route::post('/set_session_filter_report', [App\Http\Controllers\Api\VqListingController::class, 'set_session_filter_report'])->name('set_session_filter_report');
 });
@@ -330,7 +337,7 @@ Route::group(['prefix'=>'distribution', 'middleware' => ['isUser','isDistributio
     Route::get('/product_cumulative_report', [App\Http\Controllers\StaticPages\VoluntaryQuotationController::class, 'productwiseCumulativeReport'])->name('distribution_product_cumulative_report');
     Route::POST('/cumulative_report_new', [App\Http\Controllers\Api\VqListingController::class, 'cumulative_report_new'])->name('cumulative_report_new');
     Route::get('/CumulativeReportExport', [App\Http\Controllers\Api\VqListingController::class, 'CumulativeReportExport'])->name('distribution-export-cumulative-report');//for ceo export
-    Route::get('/filter_division_by_brand', [App\Http\Controllers\Api\VqListingController::class, 'filter_division_by_brand'])->name('filter_division_by_brand');
+    Route::POST('/filter_division_by_brand', [App\Http\Controllers\Api\VqListingController::class, 'filter_division_by_brand'])->name('filter_division_by_brand');
     Route::get('/cumulative_report_get_stockist', [App\Http\Controllers\Api\VqListingController::class, 'cumulative_report_get_stockist'])->name('cumulative_report_get_stockist');
     Route::post('/set_session_filter_report', [App\Http\Controllers\Api\VqListingController::class, 'set_session_filter_report'])->name('set_session_filter_report');
 });
@@ -515,7 +522,7 @@ Route::group(['prefix' =>'admin',  'middleware' => ['isAdmin']],function() {
     Route::get('/product_cumulative_report', [App\Http\Controllers\StaticPages\VoluntaryQuotationController::class, 'productwiseCumulativeReport'])->name('admin_product_cumulative_report');
     Route::POST('/cumulative_report_new', [App\Http\Controllers\Api\VqListingController::class, 'cumulative_report_new'])->name('cumulative_report_new');
     Route::get('/CumulativeReportExport', [App\Http\Controllers\Api\VqListingController::class, 'CumulativeReportExport'])->name('admin-export-cumulative-report');//for ceo export
-    Route::get('/filter_division_by_brand', [App\Http\Controllers\Api\VqListingController::class, 'filter_division_by_brand'])->name('filter_division_by_brand');
+    Route::POST('/filter_division_by_brand', [App\Http\Controllers\Api\VqListingController::class, 'filter_division_by_brand'])->name('filter_division_by_brand');
 
     Route::get('/workflow_adjust_product_wise', [App\Http\Controllers\Admin\WorkflowAdjustController::class, 'workflow_adjust_product_wise'])->name('workflow_adjust_product_wise_admin');
     Route::get('/get_pending_vq_data_workflow_product_wise', [App\Http\Controllers\Admin\WorkflowAdjustController::class, 'get_pending_vq_data_workflow_product_wise'])->name('get_pending_vq_data_workflow_product_wise_admin');
@@ -524,4 +531,11 @@ Route::group(['prefix' =>'admin',  'middleware' => ['isAdmin']],function() {
     Route::get('/productwise_discard', [App\Http\Controllers\StaticPages\VoluntaryQuotationController::class, 'productwise_discard_data'])->name('productwise_discard_data_admin');
     Route::get('/productwise_discard_getdata', [App\Http\Controllers\Api\VqListingController::class, 'productwise_discard_getdata'])->name('productwise_discard_getdata_admin');
     Route::post('/productwise_discard_selection', [App\Http\Controllers\Api\VqListingController::class, 'productwise_discard_selection'])->name('productwise_discard_selection_admin');
+
+    /* Coverletter Update date */
+    Route::get('/view_update_date', [App\Http\Controllers\Admin\UpdateCoverletterDateController::class, 'view_update_date'])->name('view_update_date');
+    Route::POST('/update_coverletter_date', [App\Http\Controllers\Admin\UpdateCoverletterDateController::class, 'update_coverletter_date'])->name('update_coverletter_date');
+    Route::POST('/GetInstutitionRevisions', [App\Http\Controllers\Admin\UpdateCoverletterDateController::class, 'GetInstutitionRevisions'])->name('GetInstutitionRevisions');
+    Route::get('/cover_letter_date_updated_view_logs_ajax', [App\Http\Controllers\Admin\UpdateCoverletterDateController::class, 'GetCoverLetterUpdatedViewLogs'])->name('GetCoverLetterUpdatedViewLogs');
+
 });
